@@ -1,0 +1,360 @@
+{
+	"main_sections" : [
+		{
+			"title" : "Make it work", 
+			"sub_title" : "How To's",
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga commodi est illo nemo? Commodi tempora autem placeat consequuntur, in aliquid.",
+			"index" : 1, 
+			"show_index" : true
+		},
+		{
+			"title" : "Learn to code", 
+			"sub_title" : "Tutorials", 
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, est distinctio quae ipsum non, eum libero laboriosam dolore!", 
+			"index" : 2, 
+			"show_index" : true
+		},
+		{
+			"title" : "Make cool stuff", 
+			"sub_title" : "Prejects & Experiments", 
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolore.", 
+			"index" : 3, 
+			"show_index" : true
+		}, 
+		{
+			"title" : "Help", 
+			"sub_title" : "Troubleshooting & Tips", 
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repellendus obcaecati error reiciendis, cum suscipit rem? Placeat consequatur architecto, recusandae!", 
+			"index" : 4, 
+			"show_index" : false
+
+		}, 
+		{
+			"title" : "FAQ", 
+			"sub_title" : "Frequently Asked Questions", 
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ex sit, neque sint asperiores quaerat impedit dignissimos culpa molestias iure.", 
+			"index" : 5, 
+			"show_index" : false
+		}
+	], 
+	"how_tos" : {
+		"modules" : [
+			{
+				"format" : "video",
+				"title" : "First Video", 
+				"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
+				"video" : "https://vimeo.com/220887182", 
+				"index" : 1
+			},
+			{
+				"format" : "slide",
+				"index" : 2,
+				"slides" : [
+					{
+						"order" : 1,
+						"title" : "first slide in slideshow", 
+						"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nisi ducimus, nam odio quisquam cumque alias fugit ipsum dolorem, eveniet?", 
+						"image" : "http://theredlist.com/media/database/muses/couples/fiction/thelma-and-louise/010-thelma-and-louise-theredlist.jpg"
+					}, 
+					{
+						"order" : 2,
+						"title" : "second slide", 
+						"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nisi ducimus, nam odio quisquam cumque alias fugit ipsum dolorem, eveniet?", 
+						"image" : "http://theredlist.com/media/database/muses/couples/fiction/thelma-and-louise/010-thelma-and-louise-theredlist.jpg"
+					}
+				] 
+			}
+		]
+	}, 
+	"tutorials" : [
+		{
+			"title" : "Hello World", 
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, qui.", 
+			"image" : "http://www.fillmurray.com/300/300", 
+			"modules" : [
+				{
+					"type" : "video",
+					"title" : "First Video", 
+					"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
+					"video" : "https://vimeo.com/220887182", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "Hello World Again", 
+			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, qui.", 
+			"image" : "http://www.fillmurray.com/300/300", 
+			"modules" : [
+				{
+					"type" : "video",
+					"title" : "Hello World Again Video", 
+					"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
+					"video" : "https://vimeo.com/220887182", 
+					"index" : 1
+				}
+			]
+		}
+	], 
+	"projects" : [
+	], 
+	"help" : [
+		{
+			"question" : "My Linkitz looks dead.",
+			"solution" : [
+				"If your Linkitz is not flashing any lights, the batteries might be discharged.  After being deeply discharged (when they run out of battery and then are not charged soon after) Linkitz will need to be allowed to charge for an extended period of time (several hours or overnight) before they'll start again. "
+			]
+		}, 
+		{
+			"question" : "My Linkitz is not executing my code.", 
+			"solution" : [
+				"Make sure that the cable is securely connected to both the USB petal and your computer/laptop, and try uploading again.", 
+				"Some USB cables are for charging only, and are not USB data cables. If you substituted another cable, this might be causing the problem. A charge-only cable cannot transmit your program to the Linkitz. The cable that came with your Linkitz carries both charge and data.", 
+				"Your code might have an error that prevents the code from executing. An example if this would be a loop that says DzWhile x is true, do ...dz but x is set to 0."
+			]
+		}, 
+		{
+			"question" : "I get an error when uploading.", 
+			"solution" : [
+				"My Linkitz is connected but I am getting an error message “Error connecting to Linkitz” when I try to upload code",
+				"This can happen when your computer has been idle for a while, especially if it has gone to sleep. Try quitting and then restarting the Linkitz app. If you have written new code, remember to save it before you quit!"
+			]
+		}, 
+		{
+			"question" : "LED petal isn't lighting up.", 
+			"solution" : [
+				"I’ve programmed my Linkitz to light up but the LED petal is not lighting up.", 
+				"All the Linkitz components include LEDs. Depending on how your code is written, different LEDs might light up, that are not on the LED petal. Check out this tutorial [link] for an explanation of how to control the LEDs."
+			]
+		}, 
+		{
+			"question" : "My motion sensor is not responding to motion.",
+			"solution" : [
+				"Make sure your program includes a block that gets data from the motion sensor (onMotion or getMotionData).", 
+				"Sometimes, immediately after being programmed, the Linkitz hub loses track of which petals are connected. Try unplugging all the petals and plugging them in again"
+			]
+		}, 
+		{
+			"question" : "Help! My Linkitz got wet!", 
+			"solution" : [
+				"Linkitz contain sensitive electronics. If they were completely immersed, we can’t guarantee what will happen, even after they completely dry out."
+			]
+		}
+	], 
+	"faq" : {
+		"sections" : [
+			{
+				"title" : "product", 
+				"questions" : [
+					{
+						"question" : "Is Linkitz waterproof? Is Linkitz water-resistant?", 
+						"answer" : [
+							"No and no. Keep your Linkitz away from water!"
+						]
+					}, 
+					{
+						"question" : "Can I track my dog/backpack with Linkitz?", 
+						"answer" : [
+							"You can’t track them in the sense of watching them move around in real time. With two sets of Linkitz, using the radio and an output petal (LED or speaker), you can get notified when your dog or backpack is outside a certain range, so you can run and get it."
+						]
+					}, 
+					{
+						"question" : "How many petals are needed for Linkitz to work?", 
+						"answer" : [
+							"The hub contains the microprocessor and has it’s own LEDs, so depending on the program you want to run, it might not need any petals."
+						]
+					}, 
+					{
+						"question" : "What is the most petals that a Linkitz can hold at the same time?", 
+						"answer" : [
+							"Linkitz can hold three petals."
+						]
+					}, 
+					{
+						"question" : "How long does Linkitz hold a charge?", 
+						"answer" : [
+							"This depends on what program you are running and how much you are using your Linkitz. If you have three petals attached and are running a program that has all the LEDs on full power all the time, the batteries might run out in just a few hours. In normal usage, the batteries should last a whole day.  Linkitz will let you know that it needs to be plugged in because the LEDs will get dimmer and dimmer and flash less frequently as the batteries use up their power."
+						]
+					}, 
+					{
+						"question" : "How do I charge my Linkitz?", 
+						"answer" : [
+							"Charge your Linkitz using the cable that came in the the box, or any USB-to-microUSB cable. Plug the USB petal (orange) into the hub (yellow). Plug the small end of the USB cable into the USB petal. Plug the large end into a computer or laptop. Your hub will begin to flash orange, to let you know that it is properly connected. It’s OK to have other petals plugged in when charging. They may light up during charging, too."
+						]
+					}, 
+					{
+						"question" : "Is it possible to overcharge my Linkitz?", 
+						"answer" : [
+							"No, it's not possible to overcharge your Linkitz. You can leave it plugged in as long as you want."
+						]
+					}, 
+					{
+						"question" : "What happens if the battery drains completely?", 
+						"answer" : [
+							"The Linkitz hub uses two tiny rechargeable batteries. It’s not good to let rechargeable batteries drain completely. The battery will have a longer lifetime if you keep your Linkitz charged. The batteries will turn off automatically when they're out, but it's not good for the batteries to store a Linkitz that's been run completely dead."
+						]
+					}, 
+					{
+						"question" : "How do I change a petal?", 
+						"answer" : [
+							"Gently pull the petal straight out of the hub to detach it. Gently push a petal into any slot on the hub to attach it.  You can watch a video that shows you how to assemble and take apart Linkitz. [link to make page]"
+						]
+					}, 
+					{
+						"question" : "Can I attach multiple petal with the same function (for example, 3 speakers)?", 
+						"answer" : [
+							"Yes. You can attach any number of output petals. For input petal, the hub will only read data from one even if you have two or three attached."
+						]
+					}, 
+					{
+						"question" : "Do the wristbands contain latex?", 
+						"answer" : [
+							"No, the wristbands are latex-free."
+						]
+					}, 
+					{
+						"question" : "Can I use my Linkitz without the wristband?", 
+						"answer" : [
+							"Sure! Some games are easier to play if you hold Linkitz in your hand. "
+						]
+					}, 
+					{
+						"question" : "Does it hurt the Linkitz to get too hot or too cold?", 
+						"answer" : [
+							"Linkitz are happiest at the same temperature that you are comfortable in. If Linkitz get too hot or too cold, the batteries might stop operating properly"
+						]
+					}
+				]
+			}, 
+			{
+				"title" : "programming", 
+				"questions" : [
+					{
+						"question" : "How can I learn to program my Linkitz?", 
+						"answer" : [
+							"There are a few ways to learn to program Linkitz.", 
+							"If you are a complete beginner, we suggest that you start with our tutorials. They introduce the different programming blocks and take you from newbie to Linkitz coder in easy-to-follow steps.", 
+							"If you have already programmed before, for example, with a language like Scratch, you’ll find Blockly easy to pick up. You can download the code for any of the games that the Linkitz team has written. See how it works, and experiment with making some changes, and see how they affect your Linkitz.", 
+							"Or, just jump in! Drag some blocks onto the workspace, connect them together, upload the code, and watch your Linkitz to see what happens. Not what you expected? Go back and try again!"
+						]
+					}, 
+					{
+						"question" : "Is coding with Blockly “real” programming?", 
+						"answer" : [
+							"Yes! Blocky is a visual programming editor that lets you create real programs by connecting blocks. The Linktz app then translates those pictures into another programming language that our hardware can run.  But when you create your code in Blockly, you are creating the programming logic, such as creating a sequence of actions, or deciding between two options based on some input."
+						]
+					}, 
+					{
+						"question" : "I have an idea for a program. Can I send it to you?", 
+						"answer" : [
+							"We’d love to hear from you. You can reach us using this contact form [link to contact form]. If you are under 13 years of age, please ask your parents to contact us, instead. And be sure to let us know if we can share your idea with our other Linkitz friends on our website!"
+						]
+					}
+				]
+			}, 
+			{
+				"title" : "general_information", 
+				"questions" : [
+					{
+						"question" : "Who makes Linkitz?", 
+						"answer" : [
+							"Linkitz are made by Lyssa and Drew, with help from some friendly designers and engineers."
+						]
+					}, 
+					{
+						"question" : "Where are Linkitz made?", 
+						"answer" : [
+							"Linkitz components are manufactured in Asia and the USA and assembled in San Francisco, California."
+						]
+					}, 
+					{
+						"question" : "Can I order replacement parts?", 
+						"answer" : [
+							"Yes, please contact us for availability [link to contact form]."
+						]
+					}
+				]
+			}
+		]
+	}, 
+	"supporters" : {
+		"stemspiration": [
+			"Alexander Lazar", 
+			"Alison Lee", 
+			"Bob Chen", 
+			"Eric Konzelmann", 
+			"Heather Williams", 
+			"Ian Mapp", 
+			"Jay Koven", 
+			"Joel Liederman", 
+			"Karen Macrae", 
+			"Lisa Shmerling", 
+			"Michael Martin", 
+			"Mitul Bhat", 
+			"Ricky Chan", 
+			"Ruth Spiro", 
+			"Steven Goldhar", 
+			"Tucker White", 
+			"Tyler Lu"
+		]
+	}, 
+	"mission" : {
+		"stats" :[
+			{
+				"title" : "Most girls become interested in STEM at the age of 11-and-a-half but this starts to wane by the age of 15.",
+				"sub_title" : "Just 42% said they would consider a STEM-related career in the future",
+				"source" : "Microsoft"
+			}, 
+			{
+				"title" : "Girls start believing they aren't goof at math, science and even computers at a young age - but providing fun STEM activities at school and home may spark interest and inspire confidence.",
+				"sub_title" : "A new I-LABS find that, when exposed to a computer-programming activity, 6-year-old girls expressed greater interest in technology and more positive attitudes about their own skills and abilities than girls who didn't try the activity.", 
+				"source" : "journal of Experimental Child Psychology"
+			}, 
+			{
+				"title" : "A 2015 study found that boys are more likely to play with toys that develop spatial intelligence-K'nex, puzzles, Lego bricks-than girls are", 
+				"sub_title" : "Marketing can certainly play a role. The girl-oriented product line Lego Friends focuses on playcating rather than construction... Spatial skills are \"not only important for math and science but for what we call 'excutive function'–higher-level thinking. Being comfortable with certain types of toys may also shape kids' confidence in specific subject.\"", 
+				"source" : "National Geographic"
+			}, 
+			{
+				"title" : "In elementary school about as many girls as boys have positive attitudes toward science. A recent study of fourth graders showed that 66 percent of girls and 68 percent of boys reported liking science.",
+				"sub_title" : "",
+				"source" : "National Science Foundation"
+			}, 
+			{
+				"title" : "Research shows that 66 percent of girls between ages 6 and 12 say they're interested in computer science.",
+				"sub_title" : "But around adolescence, interest drops off in a major way–only 32 percent of 13-to-17-year-old girls are interested in computer programs, and only 4 percent of college freshmen are. That's a problem, because by 2020, there will be more than 1.2 million available jobs in tech–and at this rate, women in the U.S. are on track to fill on track to fill 3 percent of them.",
+				"source" : "Glamour"
+			}, 
+			{
+				"title" : "Young women are not getting enough practical, hands-on experience with STEM subjects.", 
+				"sub_title" : "60% admitted they would feel more confidetn pursuing a career in STEM fields if they knew mena dn women were equally employed in those professions.", 
+				"source" : "Miscrosoft"
+
+			}
+		]
+	}, 
+	"team" : {
+		"members" : [
+			{
+				"name" : "Lyssa Neel", 
+				"title" : "Founde / CEO", 
+				"bio" : "A computer scientist by training, Lyssa is apassionate about sharing her love for programming. Before co-founding Linkitz, she served as CEO and CTO for several IT start-ups in the United States and Canada. She also co-founded the University of Toronto Early Stage Technology program. Lyssa is a graduate of MIT, where she received SB, SM, and PhD degress from the Department of Electrical Engineering adn Computer Science."
+			}, 
+			{
+				"name" : "Drew Macrae", 
+				"title" : "Founder / CTO",
+				"bio" : "Drea is a lifelong engineer: he has been taking things apart since he was five years old, and putting them back together since he was seven (sorry, Dad!). Before co-founding Linkitz, Drew was a Silicon Architecture Engineer at Intel, and previously worked at Tesla Motors and Mentor Media. Drew has a Bachelor's degree in Engineering from Harvey Mudd College. An all aorund player, Drew leads both the mechanical and electrical engineering effort at Linkitz."
+			}, 
+			{
+				"name" : "Chris Wallace", 
+				"title" : "CEdO", 
+				"bio" : "Chris holds a Doctorate in Classics from the University of Toronto. His research has been published around the globe and translated into four languages. He has been teaching for more than a decade and loves helping kids realize how much they already know. Chris makes sure that Linkitz will delight kids, satisfy parents and support teachers."
+			}, 
+			{
+				"name" : "Elli C.", 
+				"title" : "Product Advisor", 
+				"bio" : "Ellis is the complete Product Expert. With his background in design, a former buyer at Target, and a Global Brand Manager at Spin Master Ltd., he brings expertise from \"all sides of the house\"."
+			}
+		]
+	}
+}

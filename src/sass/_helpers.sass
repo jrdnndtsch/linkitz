@@ -1,0 +1,52 @@
+$margin-width : 20px
+
+//general
+img 
+	:max-width 100%
+
+
+// elements 
+.button
+	:background $orange
+	:color white
+	:text-transform uppercase
+	:text-decoration none
+	:font-weight bold	
+	:text-align center
+	:padding 12px 42px 12px 32px
+	&--download
+		.arrow
+			:width 18px
+			:background white
+			:height 3px
+			:display inline-block
+
+//wrapper
+.wrapper
+	:width 90%
+	:max-width 1200px
+	:margin 0 auto
+.wrapper--flex 
+	:display flex
+	:flex-wrap wrap
+
+
+.grid--quarter
+	:width calc(25% - (( #{$margin-width} * 3 ) / 4))
+	:margin-right $margin-width
+	:display block
+	:text-decoration none
+	:color $black
+	&:nth-of-type(4n)
+		:margin-right 0
+	img 
+		:display block	
+
+.block
+	:background white
+	:padding 20px
+	&--content
+		:background white
+		:padding 20px 12px 40px	
+
+	

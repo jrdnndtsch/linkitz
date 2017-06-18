@@ -1,0 +1,29 @@
+.mission 
+	:background url('/images/general/Linkitz-bg-blue.gif')
+	&--stats
+		> div 
+			:color white
+			:width calc((100% / 3) - (40px / 3))
+			:margin-right 20px
+			:margin-bottom 20px
+			:padding 40px 20px
+			:position relative
+			&:nth-of-type(3n + 3)
+				:margin-right 0
+			&:nth-of-type(6n + 1)
+				:background $purple
+			&:nth-of-type(6n + 2)
+				:background $orange
+			&:nth-of-type(6n + 3)	
+				:background $red
+			&:nth-of-type(6n + 4)
+				:background $pink
+			&:nth-of-type(6n + 5)
+				:background $green
+			&:nth-of-type(6n + 6)	
+				:background $cyan
+			span 
+				:position absolute
+				:bottom 20px	
+				:left 20px
+				:width calc(100% - 40px)

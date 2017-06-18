@@ -1,0 +1,14 @@
+.code 
+	:background url('/images/general/Linkitz-bg-green.gif')
+.code--intro
+	span 
+		+make_number(white, #{$green})
+	.block
+		&:first-of-type
+			:width calc(34% - 20px)	
+			:margin-right 20px
+		&:last-of-type
+			:width 66%
+			:display flex	
+			div 
+				:width 50%
