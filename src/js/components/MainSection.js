@@ -11,9 +11,11 @@ class MainSection extends React.Component {
 	render() {
 		return(
 			<div>
-				<h2>{this.props.data.title}</h2>
-				<p>{this.props.data.desc}</p>
-				<Link to={makeParam(this.props.data.title)}>-></Link>
+				<div className="main-section">
+					<h2>{this.props.data.title}</h2>
+					<p>{this.props.data.desc}</p>
+					<Link to={makeParam(this.props.data.title)}>-></Link>
+				</div>
 			</div>
 		)
 	}

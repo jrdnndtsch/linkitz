@@ -24,15 +24,22 @@ class Home extends React.Component {
 
 	render() {
 		return(
-			<div>
+			<div className="home">
 				<header>
-					<h1>Linkitz</h1>
-					<h2>Linkitz is a wearable electronic kit for kids</h2>
-					<a href="#">Get Started</a>
+					<div className="circle">
+						<h1>Linkitz</h1>
+						<h2>Linkitz is a wearable electronic kit for kids</h2>
+						<a href="#">Get Started</a>
+					</div>
 				</header>
-				{this.state.sections.map((section, i) => {
-					return <MainSection data={section} key={i}/> 
-				})}
+				<main className="home--content">
+					<section className="home--actions home--wrapper">
+						{this.state.sections.map((section, i) => {
+							return <MainSection data={section} key={i}/> 
+						})}
+						<img src="/images/general/linkitz-product-1.png"/>
+					</section>
+				</main>
 			</div>
 		)
 	}

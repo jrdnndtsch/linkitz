@@ -1,0 +1,70 @@
+.home 
+	header 
+		:height 100vh
+		:background url('/images/general/Linkitz-bg-blue.gif')
+		:position relative
+		:overflow hidden
+		.circle
+			:background rgba(255,255,255,0.3)	
+			:width 800px
+			:height 800px
+			:border-radius 50%
+			:text-align center
+			:position absolute
+			:left 50%
+			:bottom -450px
+			:transform translateX(-50%)
+	&--wrapper 
+		// :width 90%
+		:max-width 1400px
+		:margin 0 auto	
+		:height 800px	
+	&--content
+		:background url('/images/general/Linkitz-bg-white.gif')
+	&--actions
+		:overflow-y hidden
+		:position relative
+		:min-height 100vh
+		> div 
+			&:nth-of-type(1)		
+				:background rgba(135, 50, 153, 0.5)
+				:width 800px
+				:height 800px
+				:border-radius 50%
+				:position absolute
+				:left 50%
+				:transform translateX(-50%)
+				:top -350px
+				:z-index 3
+				.main-section
+					:top 400px
+			&:nth-of-type(2)
+				:background rgba(231, 26, 75, 0.5)	
+				:width 800px
+				:height 800px
+				:border-radius 50%
+				:position absolute
+				:bottom -250px
+				:left 0
+				:z-index 2
+				.main-section
+					:top 200px
+			&:nth-of-type(3)
+				:background rgba(51, 204, 102, 0.5)	
+				:width 800px
+				:height 800px
+				:border-radius 50%
+				:position absolute
+				:bottom -175px
+				:right -75px
+				.main-section
+					:top 200px
+		.main-section
+			:width 350px
+			:color white	
+			:margin 0 auto	
+			:position relative
+		img 
+			:position absolute
+			:z-index 4
+			:left 200px		
