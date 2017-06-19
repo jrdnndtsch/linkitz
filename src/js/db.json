@@ -82,7 +82,7 @@
 			]
 		}, 
 		{
-			"title" : "Hello World Again", 
+			"title" : "Pick A Color", 
 			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, qui.", 
 			"image" : "http://www.fillmurray.com/300/300", 
 			"modules" : [

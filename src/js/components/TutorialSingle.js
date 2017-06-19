@@ -30,12 +30,11 @@ class TutorialSingle extends React.Component {
 
 	render() {
 		return(
-			<main>
-				<h2>{this.state.lesson.title}</h2>
+			<main className="tutorial">
 				{this.state.modules.map((mod, i) => {
 						return (
-							<div key={i}>
-								<video src={`/videos/${mod.video}`}></video>
+							<div key={i} className="wrapper wrapper--flex tutorial--video">
+								<video src={`/videos/${mod.video}`} controls width="782px" height="600px"></video>
 								<aside>
 									<h3>{mod.title}</h3>
 									<p>{mod.desc}</p>
