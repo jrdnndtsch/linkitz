@@ -19,7 +19,7 @@ class Nav extends React.Component {
 						</ul>
 					</li>
 					<li>
-						About Us
+						<Link to="/mission">About Us</Link>
 						<ul>
 							<li><Link to="/mission">Mission</Link></li>
 							<li><Link to="/team">Team</Link></li>

@@ -12,9 +12,11 @@ class Learn extends React.Component {
 	}
 	render() {
 		return(
-			<div>
-				<h2>Learn with us</h2>
-				<section>
+			<div className="learn">
+				<div className="wrapper">
+					<h2>Learn with us</h2>
+				</div>
+				<section className="wrapper wrapper--flex">
 					{this.state.sections.map((section, i) => {
 						return <SectionBlock data={section} key={i} />
 					})}

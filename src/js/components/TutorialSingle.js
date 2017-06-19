@@ -28,10 +28,6 @@ class TutorialSingle extends React.Component {
 		this.getTutContent(this.props.match.params.title)
 	}
 
-	// componentWillReceiveProps(newProps) {
-	// 	console.log(newProps, 'thing')
-
-	// }
 	render() {
 		return(
 			<main>
@@ -39,7 +35,7 @@ class TutorialSingle extends React.Component {
 				{this.state.modules.map((mod, i) => {
 						return (
 							<div key={i}>
-								<video></video>
+								<video src={`/videos/${mod.video}`}></video>
 								<aside>
 									<h3>{mod.title}</h3>
 									<p>{mod.desc}</p>

@@ -3,21 +3,21 @@
 		{
 			"title" : "Make it work", 
 			"sub_title" : "How To's",
-			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga commodi est illo nemo? Commodi tempora autem placeat consequuntur, in aliquid.",
+			"desc" : "Linkitz is a new way for kids to explore technology. It's a set of electronic links that snap together in different combinations to make fun, wearable toys right out of the box.  Got your Linkitz? Get started here",
 			"index" : 1, 
 			"show_index" : true
 		},
 		{
 			"title" : "Learn to code", 
 			"sub_title" : "Tutorials", 
-			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, est distinctio quae ipsum non, eum libero laboriosam dolore!", 
+			"desc" : "With the Linkitz app, you can customize your toys, create new games, and learn key programming concepts.", 
 			"index" : 2, 
 			"show_index" : true
 		},
 		{
 			"title" : "Make cool stuff", 
 			"sub_title" : "Prejects & Experiments", 
-			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolore.", 
+			"desc" : "Check out all the games, projects, and activities you can make with Linkitz. ", 
 			"index" : 3, 
 			"show_index" : true
 		}, 
@@ -76,7 +76,7 @@
 					"type" : "video",
 					"title" : "First Video", 
 					"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
-					"video" : "https://vimeo.com/220887182", 
+					"video" : "HelloWorld.mov", 
 					"index" : 1
 				}
 			]
@@ -90,7 +90,7 @@
 					"type" : "video",
 					"title" : "Hello World Again Video", 
 					"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
-					"video" : "https://vimeo.com/220887182", 
+					"video" : "HelloWorld.mov", 
 					"index" : 1
 				}
 			]
