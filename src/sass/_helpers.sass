@@ -14,8 +14,10 @@ img
 	:font-weight bold	
 	:text-align center
 	:padding 12px 42px 12px 32px
+	:display inline-block
 	&--download
 		:position relative
+		:font-size 15px
 		.arrow
 			:width 18px
 			:height 2px
@@ -60,6 +62,7 @@ img
 .grid--quarter
 	:width calc(25% - (( #{$margin-width} * 3 ) / 4))
 	:margin-right $margin-width
+	:margin-bottom $margin-width
 	:display block
 	:text-decoration none
 	:color $black
@@ -74,5 +77,13 @@ img
 	&--content
 		:background white
 		:padding 20px 12px 40px	
+		h3 
+			:font-family $body-font
+			:font-size 20px
+			:margin 0
+.sub-title
+	:color white
+	:font-size 20px
+	:font-family $body-font
 
 	

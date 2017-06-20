@@ -1,26 +1,28 @@
 .learn 
 	:background url('/images/general/Linkitz-bg-white.gif')
+	h2 
+		:font-size 50px
 	article 
 		:background $cyan
 		:width calc((100% / 3) - (40px / 3))
 		:margin-right 20px
 		:margin-bottom 20px
 		:padding 20px
+		:min-height 400px
 		&:nth-of-type(3n + 3)
 			:margin-right 0
 		&:nth-of-type(1)
 			:background $purple
 			span 
-				+make_number($purple, white)
+				+make_number($purple, white, 50px)
 		&:nth-of-type(2)
 			:background $green
 			span 
-				+make_number($green, white)
+				+make_number($green, white, 50px)
 		&:nth-of-type(3)
 			:background $red
 			span 
-				+make_number($red, white)
-		div 
+				+make_number($red, white, 50px)
 					
 		a 
 			:text-decoration none
@@ -29,5 +31,13 @@
 			:flex-direction column
 			:justify-content space-between
 			:height 100%
+			:position relative
+			>div.content-block 
+				:position absolute
+				:bottom 20px
 		h3 
-			:font-size 42px	
+			:font-size 50px
+			:margin 0 0 18px
+		h4 
+			:font-size 18px
+			:margin 0 0 16px		

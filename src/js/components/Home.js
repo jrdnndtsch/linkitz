@@ -14,9 +14,11 @@ class Home extends React.Component {
 
 	componentDidMount() {
 		let sections = db.main_sections.filter((section) => {
-
 			return section.show_index
 		})
+		// change the order of sections to adhere to style on front page
+		let removed = sections.splice(1, 1)
+		sections.push(removed[0])
 		this.setState({
 			sections : sections
 		})

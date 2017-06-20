@@ -356,5 +356,27 @@
 				"bio" : "Ellis is the complete Product Expert. With his background in design, a former buyer at Target, and a Global Brand Manager at Spin Master Ltd., he brings expertise from \"all sides of the house\"."
 			}
 		]
-	}
+	}, 
+	"projects" : [
+		{
+			"title" : "Dance Pal 1", 
+			"level" : "Medium"
+		}, 
+		{
+			"title" : "Fidget Gadget", 
+			"level" : "Medium"
+		}, 
+		{
+			"title" : "Fireflies Jar", 
+			"level" : "Easy"
+		}, 
+		{
+			"title" : "Rainbow Flash", 
+			"level" : "Medium"
+		}, 
+		{
+			"title" : "Red Light Green Light", 
+			"level" : "Easy"
+		}
+	]
 }

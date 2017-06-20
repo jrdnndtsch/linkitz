@@ -45,12 +45,12 @@ class Code extends React.Component {
 					</div>
 				</section>
 				<section className="wrapper">
-					<h2>Coding Tutorials</h2>
+					<h2 className="sub-title">Coding Tutorials</h2>
 					<div className="wrapper--flex">
 						{this.state.tutorials.map((tut, i) => {
 							return (
 								<Link to={`tutorial/${makeParam(tut.title)}`} key={i} className="grid--quarter">
-									<TutorialBlock data={tut}/> 
+									<TutorialBlock data={tut} url="tutorials" ext="png"/> 
 								</Link>
 							)
 						})}

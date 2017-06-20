@@ -9,7 +9,7 @@ class SectionBlock extends React.Component {
 			<article>
 				<Link to={makeParam(this.props.data.title)}>
 					{this.props.data.show_index ? <span>{this.props.data.index}</span> : null }
-					<div>		
+					<div className={this.props.data.show_index ? null : "content-block" }>		
 						<h3>{this.props.data.title}</h3>
 						<h4>{this.props.data.sub_title}</h4>
 						<p>{this.props.data.desc}</p>
