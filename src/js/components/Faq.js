@@ -4,6 +4,8 @@ import { paramToString } from './../lib/helpers.js';
 
 import db from '../db.json';
 
+import BreadCrumbs from './BreadCrumbs.js';
+
 class Faq extends React.Component {
 	constructor() {
 		super();
@@ -21,9 +23,10 @@ class Faq extends React.Component {
 	render() {
 		return(
 			<div className="faq">
-				<div className="wrapper">
+				<BreadCrumbs links={['Home', 'Learn', 'FAQ']}/>
+				<div className="wrapper page-title">
 					<h1>FAQ</h1>
-					<h2>Frequently Asked Questions</h2>
+					<h2 className="sub-title">Frequently Asked Questions</h2>
 				</div>
 				<div className="wrapper">
 					{this.state.sections.map((sec, i) =>{

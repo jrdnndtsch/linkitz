@@ -17,16 +17,20 @@ class Mission extends React.Component {
 	render() {
 		return(
 			<div className="mission">
-				<div className="wrapper">
+				<div className="wrapper page-title">
 					<h1>Our Mission</h1>
 				</div>
 				<section className="block wrapper">
 					<h2>Linkitz Vision</h2>
 					<p>Linkitz was created as a solution to the lack of technology toys...</p>
 				</section>
-				<section>
+				<section className="block-image wrapper wrapper--flex">
 					<div>
-						
+						<img src="./images/general/mission.jpg" />
+					</div>
+					<div>
+						<p>Linkitz mission is to inspire the next generation of tech titans.</p>
+						<p>We aim to disrupt both the gender inequity of eletronic toy offerings and the almost exclusively male leadership of toy tech industries.</p>
 					</div>
 				</section>
 				<section className="mission--stats wrapper wrapper--flex">

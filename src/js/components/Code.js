@@ -1,5 +1,6 @@
 import React from 'react';
 import TutorialBlock from './TutorialBlock.js';
+import BreadCrumbs from './BreadCrumbs.js';
 import { Link } from 'react-router-dom'; 
 
 import db from '../db.json';
@@ -23,6 +24,10 @@ class Code extends React.Component {
 	render() {
 		return(
 			<div className="code">
+				<BreadCrumbs links={['Home', 'Learn', 'Learn to code']}/>
+				<div className="wrapper page-title">
+					<h1>Learn to Code</h1>
+				</div>
 				<section className="code--intro wrapper wrapper--flex">
 					<div className="block">
 						<span>1</span>

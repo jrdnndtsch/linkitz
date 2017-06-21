@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionBlock from './SectionBlock.js';
+import BreadCrumbs from './BreadCrumbs.js';
 
 import db from '../db.json';
 
@@ -13,8 +14,9 @@ class Learn extends React.Component {
 	render() {
 		return(
 			<div className="learn">
-				<div className="wrapper">
-					<h2>Learn with us</h2>
+				<BreadCrumbs links={['Home', 'Learn']}/>
+				<div className="wrapper page-title">
+					<h1>Learn with us</h1>
 				</div>
 				<section className="wrapper wrapper--flex">
 					{this.state.sections.map((section, i) => {

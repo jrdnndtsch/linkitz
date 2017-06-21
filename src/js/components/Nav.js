@@ -5,7 +5,7 @@ class Nav extends React.Component {
 		return(
 			<nav>
 				<div className="logo">
-					<Link to="/">Linkitz</Link>
+					<Link to="/"><img src="./images/general/logo.svg"/></Link>
 				</div>
 				<ul>
 					<li><Link to="/learn">Learn</Link>

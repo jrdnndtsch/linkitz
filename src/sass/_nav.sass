@@ -1,5 +1,11 @@
 nav 
 	:display flex
+	:max-width 1300px
+	:margin 0 auto
+	:align-items center
+	.logo
+		:width 160px
+		:margin-right 40px
 	ul 
 		:display flex
 		:margin 0
@@ -14,8 +20,18 @@ nav
 				:display inline-block
 				:min-width 150px
 				:text-align center
+				:font-size 16px
+				:font-weight bold
 		li 
 			:position relative
+			ul 
+				a 
+					:padding 12px
+					:width 100%
+					:text-transform capitalize
+					:font-size 14px
+					:font-weight semi-bold	
+					:color white
 			&:hover 
 				:background $orange
 				a
@@ -25,9 +41,7 @@ nav
 					li 
 						&:hover
 							:background darken($orange, 10%)
-						a 
-							:width 100%
-							:text-transform capitalize	
+
 
 		ul 
 			:display none
@@ -38,3 +52,16 @@ nav
 			:left 0
 			:z-index 10
 			:width 100%
+.bread-crumbs
+	:background rgba(0,0,0,0.3)
+	:padding 12px 0
+	a 
+		:color white
+		:text-decoration none
+		:font-size 11px
+		&:after
+			:content '/'
+			:margin 0 4px
+		&:last-of-type
+			&:after
+				:content ''	

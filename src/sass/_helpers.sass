@@ -52,7 +52,7 @@ img
 //wrapper
 .wrapper
 	:width 90%
-	:max-width 1200px
+	:max-width 1240px
 	:margin 0 auto
 .wrapper--flex 
 	:display flex
@@ -66,6 +66,8 @@ img
 	:display block
 	:text-decoration none
 	:color $black
+	img 
+		:width 100%
 	&:nth-of-type(4n)
 		:margin-right 0
 	img 
@@ -76,14 +78,38 @@ img
 	:padding 20px
 	&--content
 		:background white
-		:padding 20px 12px 40px	
-		h3 
-			:font-family $body-font
-			:font-size 20px
+		h3
 			:margin 0
+			:font-family $body-font
+		&.tutorials
+			:padding 20px 12px 40px	
+			h3 
+				:font-size 20px
+		&.projects
+			:padding 24px 12px 20px
+			h3 
+				:font-size 15px	
+				:margin-bottom 14px
+			span 
+				:font-size 13px
+				:font-weight bold	
+				strong.easy 
+					:color $green
+				strong.medium 
+					:color $orange	
+				strong.advanced
+					:color $red	
 .sub-title
 	:color white
 	:font-size 20px
 	:font-family $body-font
+	:margin 0 0 30px
+.page-title
+	h1 
+		:font-size 50px
+		:font-family $header-font
+		:margin 0 0 50px
+		:padding-top 50px
+		:color white		
 
 	

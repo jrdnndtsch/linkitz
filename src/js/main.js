@@ -32,6 +32,7 @@ class Main extends React.Component {
         <div>
           <Nav />
           <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
           <Route path="/learn" component={Learn} />
           <Route path="/learn-to-code" component={Code} />
           <Route path="/tutorial/:title" component={TutorialSingle} />

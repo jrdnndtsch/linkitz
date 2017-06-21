@@ -1,5 +1,7 @@
 .mission 
 	:background url('/images/general/Linkitz-bg-blue.gif')
+	.block + .block
+		:margin-top 20px
 	&--stats
 		> div 
 			:color white
@@ -27,3 +29,21 @@
 				:bottom 20px	
 				:left 20px
 				:width calc(100% - 40px)
+	.block-image
+		:margin 20px auto
+		img 
+			:display block			
+		div 
+			&:first-of-type
+				:width 70%
+			&:last-of-type
+				:width 30%
+				:background white	
+				:display flex
+				:align-items center
+				:justify-content center
+				:flex-direction column
+				:padding 40px
+				p
+					:font-size 25px
+					:font-family $header-font

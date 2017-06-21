@@ -11,7 +11,9 @@ class Make extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			projects: []
+			projects: [],
+			filters: ['All', 'Easy', 'Medium', 'Advanced'], 
+			active_filter: 'All'
 		}
 	}
 
@@ -20,9 +22,39 @@ class Make extends React.Component {
 			projects: db.projects
 		})
 	}
+
+	filterProjects(filter) {
+		console.log(filter)
+		let proj = []
+		if(filter != 'All') {	
+			proj = db.projects.filter((p) => {
+				return p.level === filter
+			})
+		} else {
+			proj = db.projects
+		}
+		this.setState({
+			projects: proj, 
+			active_filter: filter
+		})
+	}
 	render() {
 		return(
 			<div className="make">
+				<section>
+					<div className="wrapper page-title">
+						<h1>Make Cool Stuff</h1>
+						<h2 className="sub-title">Project & Experiments</h2>
+						<div className="make--filters">
+							<ul>
+								<li>Sort:</li>
+								{this.state.filters.map((f, i) => {
+									return <li key={i} onClick={this.filterProjects.bind(this, f)} className={this.state.active_filter === f ? 'active' : 'off'}  >{f}</li>
+								})}
+							</ul>
+						</div>
+					</div>
+				</section>
 				<div className="wrapper wrapper--flex">
 					{this.state.projects.map((p, i) => {
 						return(

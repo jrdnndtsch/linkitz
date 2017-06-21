@@ -15,7 +15,7 @@ class TutorialBlock extends React.Component {
 		return(
 			<article>	
 					<img src={this.makeImageUrl(this.props.url, makeParam(this.props.data.title), this.props.ext)}/>
-					<div className="block--content">	
+					<div className={`block--content ${this.props.url}`}>	
 						<h3>{this.props.data.title}</h3>
 						{this.props.data.level ? <span>Level: <strong className={this.props.data.level.toLowerCase()}>{this.props.data.level}</strong></span> : null}
 					</div>
