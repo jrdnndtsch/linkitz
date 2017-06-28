@@ -97,6 +97,274 @@
 		}
 	], 
 	"projects" : [
+		{
+			"title":"BoopIt",
+			"sub_title":"To play BoopIt , Linkitz  gives an instruction through the speaker and you have to follow the instruction. If you succeed, you get the next instruction. It gives the instructions faster and faster as you play. BoopIt is an advanced level and uses more components and there are more parts to the code.",
+			"parts" : ["hub", "USB", "LED", "motion", "speaker", "microphone"],
+			"extra_parts" : [],
+			"level": "Advanced",
+			"instructions": [
+				{
+					"text" : "Get the BoopIt code from the Saved Programs menu and load the code to Linkitz."
+				}, 
+				{
+					"text": "Then unplug the USB petal from the hub, because you will need three other petals for this game: the motion petal, the speaker, and the microphone."
+				}, 
+				{
+					"text" : "Attach the motion petal, the speaker, and the microphone to the hub."
+				}, 
+				{
+					"text" : "Linkitz will count down three flashes, two flashes, one flash and then the game starts."
+				}, 
+				{
+					"text" : "The instructions are: shake it (shake the Linkitz), dark it (cover the Linkitz with your hand to block the light sensor) and tilt it (tilt the Linkitz in the direction of the lit petal)."
+				}, 
+				{
+					"text" : "If you get through 100 instructions, you win and Linkitz plays a victory pattern. Otherwise Linkitz plays a sad pattern and you have to start from the beginning."
+				}
+			]
+		}, 
+		{
+			"title":"Dance pal 1",
+			"sub_title":"Do you like to dance? Make you Linkitz flash in time with your cool dance moves!",
+			"parts" : ["hub", "USB", "LED", "motion"],
+			"extra_parts" : [],
+			"level": "Easy",
+			"instructions": [
+				{
+					"text": "Make a program that flashes when it senses motion.  You only need two blocks for the simplest version!"
+				}, 
+				{
+					"text" : "Click here to see a hint (Put the Flash block inside the Motion Trigger block)"
+				}
+			],
+			"explore" : [
+				{
+					"text" : "Use a list to make Linkitz flash up to 4 colors at once"
+				}, 
+				{
+					"text" : "Use more than one flash block to make Linkitz flash diferent colors in sequence."
+				}
+			]
+		}, 
+		{
+			"title":"Firefly Jar",
+			"sub_title":"An easy-to-make project with your Linkitz. When you are done it will look like you caught fireflies in a mason jar!",
+			"parts" : ["hub", "USB", "LED", "motion"],
+			"extra_parts" : ["Medium-size clear glass jar with a lid", "A small piece of string, about 5” long.", "Tape"],
+			"level": "Easy",
+			"instructions": [
+				{
+					"text" : "Make sure your jar is clean and dry. You don’t want any dust or water getting inside your Linkitz."
+				}, 
+				{
+					"text" : "Download the program called Fireflies from the Saved Program menu.", 
+					"sub_text" : ["Take a look at the program. It uses random twice. It makes your Linkitz flash green at random intervals, and it randomly chooses which LEDs to light up."]
+				}, 
+				{
+					"text": "Load the program to your Linkitz"
+				}, 
+				{
+					"text" : "Tape one end of the string to the top of the jar, and the other end to the stem of your hub. You may have to cut a little bit off the string. You want your Linkitz to hang inside the jar, not touching the bottom."
+				}, 
+				{
+					"text" : "Carefully screw the lid on the jar."
+				}, 
+				{
+					"text" : "Take your jar into a darkened room and watch the “fireflies” flash."
+				}
+			],
+			"explore" : [
+				{
+					"text" : "How can you change the Fireflies program to make your “fireflies” flash more frequently?"
+				}
+			]
+		}, 
+		{
+			"title":"Hot Potato",
+			"sub_title":"Pass the Linkitz from person to person. Don’t be left holding Linkitz when the buzzer sounds!",
+			"parts" : ["hub", "USB", "LED", "Speaker"],
+			"extra_parts" : ["You can also use the Motion petal for more lights, if you don’t have a Speaker petal", "At least two players"],
+			"level": "Medium",
+			"instructions":{
+				"1" : {
+					"text": "Download the program called Hot Potato from the Saved Program menu." 
+				}, 
+				"2" : {
+					"text" : "Take a look at the program. You’ll see that it checks to see if a speaker is attached, so it knows if it should make a sound at the end of the game."
+				}, 
+				"3" : {
+					"text" : "The program uses a timer set to a random amount of time, so the players don’t know when the time will run out. It’s different every time you play the game."
+				}, 
+				"4" : {
+					"text" : "Load the program to Linkitz"
+				}, 
+				"5" : {
+					"text" : "The Linkitz will start flashing. Pass the Linkitz from person to person. The flashing gets faster and faster until Linkitz glows solid red. Whoever is holding the Linkitz when it goes red is “out” and has to leave the game. Play again until only one person is left. The last one left is the winner."
+				}, 
+				"6" : {
+					"text" : "If you have a speaker attached, the Linkitz will glow red and buzz when the timer is up."
+				}
+			},
+			"explore" : [], 
+			"hints" : []
+		}, 
+		{
+			"title":"Nightlight",
+			"sub_title":"If you charge your linkitz for a while before you go to bed, the batteries will last long enough to keep you company all night. Watch your favorite colors glow and change as you fall asleep.",
+			"parts" : ["Hub", "LED", "USB"],
+			"extra_parts" : ["A sheet of letter-size lightweight white printer paper or parchment paper", "Tape", "Scissors", "Pencil", "Ruler"],
+			"level": "Easy",
+			"instructions": {
+				"1" : {
+					"text" : "Measure 4 inches down from the top of the paper on either side and draw a line from one side of the paper to the other. This will be your folding line."
+				}, 
+				"2" : {
+					"text" : "Draw another line from one side of the paper to the other, 1 inch below the folding line. This will be your cutting line."
+				}, 
+				"3" : {
+					"text" : "Cut the paper on the cutting line. We will use the smaller piece*."
+				}, 
+				"4" : {
+					"text" : "Fold the paper on the folding line. This double-layer of paper will be the base of the nightlight."
+				}, 
+				"5" : {
+					"text" : "Roll the paper into a tube, keeping the folded edge on the bottom. Don’t overlap the edges too much! Make sure that the tube fits around your Linkitz.  Then tape the tube to keep it rolled."
+				}, 
+				"6" : {
+					"text" : "Decide on the colors you want your nightlight to glow."
+				}, 
+				"7" : {
+					"text" : "Get program Nightlight-Easy from the Saved program list. This lets you put in two colors that will take turns lighting for 10 seconds each. Drag your favorite colors to the Fade blocks. If you leave the Fade blocks empty, Linkitz will pick two colors to glow and change them every 10 seconds."
+				}
+			},
+			"explore" :{
+				"1" : {
+					"text" : "How would you change Nightlight-Easy to glow in more than two colors?"
+				}, 
+				"2" : {
+					"text": "Check out how the Fade block works. How would you make each color glow for longer than 10 seconds?", 
+					"note" : "If you use too many colors, or set the glow timer for too long, your batteries might not last for the whole night."
+				}, 
+				"3" : {
+					"text" : "Keep the larger piece to make a paper airplane http://www.origami-instructions.com/paper-airplanes.html"
+				}
+			}, 
+			"hints" : []
+		}, 
+		{
+			"title":"Rainbow Flash",
+			"sub_title":"How far is it to the end of the rainbow? This game counts your movements and displays a rainbow light show when you reach the goal.",
+			"parts" : ["hub", "LED", "USB", "motion"],
+			"extra_parts" : [],
+			"level": "Medium",
+			"instructions": {
+				"1": {
+					"text" : "Download the Rainbow Flash code from the Saved Program list."
+				}, 
+				"2" : {
+					"text" : "The code has three parts."
+				}, 
+				"3" : {
+					"text" : "The OnStart block sets up a list of rainbow colors, and sets the counter to 0."
+				}, 
+				"4" : {
+					"text" : "The MotionTrigger block adds one to the counter every time it senses motion, and flashes one color. As the number of your movements gets bigger, the color moves to the next color in the rainbow colors list."
+				}, 
+				"5" : {
+					"text" : "The Timing block checks every second to see if the counter has reached the goal (127).  If it has, it flashes the whole rainbow and then resets the counter to zero."
+				}, 
+				"6" : {
+					"text" : "Load the code to Linkitz, and start moving. When you see the rainbow flash, YAY! You did it!"
+				}
+			},
+			"explore" : {
+				"1" : {
+					"text" : "Does anyone you know wear a FitBit™ on their wrist? Many grown ups use these to make sure they walk 10,000 steps a day.  The biggest number Linkitz can count to is 127.  Can you think if a way to get Linkitz to count to higher numbers?",
+					"hint" : "Use another counter. What is 127 x 127?"
+				}
+			}
+		}, 
+		{
+			"title":"Red Light Green Light",
+			"sub_title":"Have you ever played “Red Light, Green Light”? It’s a classic game and Linkitz makes it even more fun.",
+			"parts" : ["hub", "LED", "USB"],
+			"extra_parts" : ["You can also use the motion link too", "At least 3 players"],
+			"level": "Easy",
+			"instructions":{
+				"1" : {
+					"text" : "Download the program called Red Light Green Light from the Saved Programs menu."
+				}, 
+				"2" : {
+					"text" : "This program uses random to flash red then green, over and over, for different amounts of time."
+				}, 
+				"3" : {
+					"text" : "Load it to your Linkitz."
+				}, 
+				"4" : {
+					"text" : "To play:", 
+					"sub_text" : ["To play, one person is chosen to be the traffic cop.", "All the players stand on the starting line and the traffic cop stands with her back to the rest of the players.", "When the Linkitz flashes green the traffic cop shouts “Green light”. The other players try to run to the finish line.", "When the Linkitz flashes red, the traffic cop shouts \"red light,\" and turns around. The other players have to freeze.", "If the traffic cop catches a player moving, she sends them back to the starting line.", "The first person to cross the finish line wins, and becomes the new traffic cop."]
+				}
+			},
+			"explore" : {
+				"1" : {
+					"text": "Change the program to flash red or green randomly, instead of always green-red-green-red. If you shout “red light” when everyone is already frozen, sometimes people start to run!"
+				}
+			}, 
+			"hints" : []
+		}, 
+		{
+			"title":"Rock Paper Scissors",
+			"sub_title":"Want to play Rock Paper Scissors but you’re all alone? No problem, Linkitz knows how to play this game! One, two three, GO!",
+			"parts" : [ "hub", "LED", "USB", "Motion"],
+			"extra_parts" : [],
+			"level": "Medium",
+			"instructions": [
+				{
+					"text" : "Download the Rock Paper Scissors code from the Saved Programs menu."
+				}, 
+				{
+					"text" : "To play:"
+				}, 
+				{
+					"text" : "Linkitz will flash green three times (counting to three) and then show a pattern of lights.", 
+					"sub_text" : ["Rock is the smallest hand sign, so if Linkitz chooses rock, it will only light the hub (red lights for rock). If you threw paper, you win because paper covers rock. But if you threw scissors, Linkitz wins, because rock breaks scissors.", "Paper is the biggest hand sign so if Linkitz chooses paper, it lights the hub and all three petals (purple lights for paper). If you threw scissors, you win, because scissors cut paper. But if you threw rock, you lose, because paper covers rock.", "Scissors hand sign looks like a V, so if Linkitz chooses scissors, it will light up two petals and the hub, making a V shape from lights (sapphire blue for scissors). If you threw rock, you win, because rock breaks scissors. But if you threw paper, you lose, because scissors cut paper.", "Did you win? Try again! Linkitz will play 10 times."]
+				}
+			],
+			"explore" : []
+		}, 
+		{
+			"title":"Simone",
+			"sub_title":"Simone is a \"Follow Me\" game.  It tests your memory skill. Play it and see how many moves you can remember!",
+			"parts" : ["hub", "LED", "USB", "motion"],
+			"extra_parts" : [],
+			"level": "Advanced",
+			"instructions": [
+				{
+					"text" : "Download the Simone code from the Saved Programs list, and load the code to Linkitz."
+				}, 
+				{
+					"text" : "To play Simone, your Linkitz will start by flashing one petal one color. Tilt your Linkitz in the direction of the petal that flashed. "
+				}, 
+				{
+					"text" :"If you do it in time, Linkitz will flash the same petal and then another and wait for you to tilt the Linkitz in the direction of each petal, in order."
+				},
+				{
+					"text" : "On each turn, Linkitz will add another flashing petal and wait for you to tilt the Linkitz in the direction of the flashes."
+				}, 
+				{
+					"text" : "If you can tilt the pattern of 10 flashes in a row, you win! Linkitz rewards you with a victory pattern!"
+				}, 
+				{
+					"text" : "If you don’t repeat the pattern in time, or make a mistake, you’ll get a sad  pattern and the game will start again."
+				}
+			],
+			"explore" : {
+				"1" : {
+					"text" : "Once you can easily repeat a pattern of 10, change the game to make a longer pattern."
+				}
+			}
+		}
 	], 
 	"help" : [
 		{
@@ -355,28 +623,11 @@
 				"title" : "Product Advisor", 
 				"bio" : "Ellis is the complete Product Expert. With his background in design, a former buyer at Target, and a Global Brand Manager at Spin Master Ltd., he brings expertise from \"all sides of the house\"."
 			}
+		], 
+		"philosophy" : [
+			"Social interaction and cooperative play are the objectives behind the design and development of Linkitz. As a technology toy, this sets Linkitz apart. We aren’t a toy that you just play with alone. We’re a toy that responds to you and your friends: adding color to a game of tag by lighting up when you’re chasing someone, turning a game of Miss Mary Mack or Slide into a rave with lights that keep time to your clapping, or sensing when you’re near a friend (who is also wearing Linkitz) and lighting up to celebrate your friendship. Linkitz facilitates amazing experiences where a girls’ imagination is the only limit.", 
+			"Our team has never thought of technology as just sitting down and building something for its own sake -- to us it has always been about finding ways to solve problems and make things work better. That’s the side of technology that Linkitz invites kids to explore and enjoy. It’s a toy that shows them how much there is to love about making things, and lets them share that love with their friends.", 
+			"We believe that Linkitz’s combination of hardware, code, design and wearable possibilities teaches STEM through freedom of play and exploration."
 		]
-	}, 
-	"projects" : [
-		{
-			"title" : "Dance Pal 1", 
-			"level" : "Medium"
-		}, 
-		{
-			"title" : "Fidget Gadget", 
-			"level" : "Medium"
-		}, 
-		{
-			"title" : "Fireflies Jar", 
-			"level" : "Easy"
-		}, 
-		{
-			"title" : "Rainbow Flash", 
-			"level" : "Medium"
-		}, 
-		{
-			"title" : "Red Light Green Light", 
-			"level" : "Easy"
-		}
-	]
+	}
 }

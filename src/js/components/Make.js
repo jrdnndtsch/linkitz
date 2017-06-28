@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 
 import TutorialBlock from './TutorialBlock.js';
+import BreadCrumbs from './BreadCrumbs.js';
 
 import db from '../db.json';
 
@@ -41,6 +42,7 @@ class Make extends React.Component {
 	render() {
 		return(
 			<div className="make">
+				<BreadCrumbs links={['Home', 'Learn', 'Make cool stuff']}/>
 				<section>
 					<div className="wrapper page-title">
 						<h1>Make Cool Stuff</h1>
@@ -59,7 +61,7 @@ class Make extends React.Component {
 					{this.state.projects.map((p, i) => {
 						return(
 							<Link to={`projects/${makeParam(p.title)}`} key={i} className="grid--quarter">
-								<TutorialBlock data={p} url="projects" ext="png"/>
+								<TutorialBlock data={p} url="projects" ext="svg"/>
 							</Link>	
 						)
 					})}

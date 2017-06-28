@@ -1,0 +1,61 @@
+.project 
+	:background url('/images/general/Linkitz-bg-red.gif')
+	h1 
+		:font-size 50px
+		:font-family $header-font
+		:margin 12px 0 10px
+	h2 
+		:font-size 13px
+		:font-family $body-font
+		:font-weight normal
+		:margin 0
+	h3 
+		:font-family $body-font
+		:font-size 20px
+	.block
+		:padding 40px 30px
+	.wrapper--flex
+		>div
+			:width 50%
+	&--parts
+		ul 
+			:margin 0
+			:padding 0
+			:list-style 
+			:display flex
+			:flex-wrap wrap
+			li 
+				:width 50%
+				:display flex
+				:align-items center
+				:font-size 16px
+				:margin-bottom 20px
+				span 
+					:margin-left 10px
+					:text-transform capitalize	
+			img 
+				:width 50px	
+	&--level
+		:width 140px
+		:height 140px
+		:display inline-block
+		:line-height 140px
+		:text-align center
+		:color white
+		:border-radius 50%
+		:font-weight bold
+		:font-size 18px
+		:text-transform uppercase
+		&.easy 
+			:background $green
+		&.medium 
+			:background $orange
+		&.advanced 
+			:background $red	
+	&--instructions
+		ol
+			:font-size 13px
+			:margin 0
+			:padding-left 16px
+			li 
+				:margin-bottom 24px								

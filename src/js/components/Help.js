@@ -1,5 +1,6 @@
 import React from 'react';
 import SectionBlock from './SectionBlock.js';
+import BreadCrumbs from './BreadCrumbs.js';
 
 import db from '../db.json';
 
@@ -34,9 +35,10 @@ class Help extends React.Component {
 	render() {
 		return(
 			<div className="help">
-				<div className="wrapper">
+				<BreadCrumbs links={['Home', 'Learn', 'Help']}/>
+				<div className="wrapper page-title">
 					<h1>Help</h1>
-					<h2>Troubleshooting & Tips</h2>
+					<h2 className="sub-title">Troubleshooting & Tips</h2>
 				</div>
 				<div className="help--content wrapper wrapper--flex">
 					<aside>

@@ -17,6 +17,7 @@ import Mission from './components/Mission.js';
 import Team from './components/Team.js';
 import Supporters from './components/Supporters.js';
 import TutorialSingle from './components/TutorialSingle.js';
+import ProjectSingle from './components/ProjectSingle.js';
 import Make from './components/Make.js';
 
 require('../sass/styles.sass')
@@ -38,11 +39,11 @@ class Main extends React.Component {
           <Route path="/tutorial/:title" component={TutorialSingle} />
           <Route path="/make-it-work" component={Work} />
           <Route path="/make-cool-stuff" component={Make} />
-          <Route path="/projects/:title" component={TutorialSingle} />
+          <Route path="/projects/:title" component={ProjectSingle} />
           <Route path="/help" component={Help} />
           <Route path="/faq" component={Faq} />
-          <Route path="/mission" component={Mission} />
-          <Route path="/team" component={Team} />
+          <Route path="/our-mission" component={Mission} />
+          <Route path="/linkitz-team" component={Team} />
           <Route path="/supporters" component={Supporters} />
 
 

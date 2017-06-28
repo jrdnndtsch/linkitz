@@ -5,7 +5,7 @@ class Nav extends React.Component {
 		return(
 			<nav>
 				<div className="logo">
-					<Link to="/"><img src="./images/general/logo.svg"/></Link>
+					<Link to="/"><img src="/images/general/logo.svg"/></Link>
 				</div>
 				<ul>
 					<li><Link to="/learn">Learn</Link>
@@ -13,7 +13,7 @@ class Nav extends React.Component {
 							<li><Link to="/learn">Learn All</Link></li>
 							<li><Link to="/make-it-work">Make</Link></li>
 							<li><Link to="/learn-to-code">Code</Link></li>
-							<li><Link to="/learn-to-code">Explore (change)</Link></li>
+							<li><Link to="/make-cool-stuff">Explore</Link></li>
 							<li><Link to="/help">Help</Link></li>
 							<li><Link to="/faq">FAQ</Link></li>
 						</ul>
@@ -21,8 +21,8 @@ class Nav extends React.Component {
 					<li>
 						<Link to="/mission">About Us</Link>
 						<ul>
-							<li><Link to="/mission">Mission</Link></li>
-							<li><Link to="/team">Team</Link></li>
+							<li><Link to="/our-mission">Mission</Link></li>
+							<li><Link to="/linkitz-team">Team</Link></li>
 						</ul>
 					</li>
 				</ul>

@@ -1,5 +1,6 @@
 import React from 'react';
 import db from '../db.json';
+import BreadCrumbs from './BreadCrumbs.js';
 
 class Mission extends React.Component {
 	constructor() {
@@ -17,10 +18,11 @@ class Mission extends React.Component {
 	render() {
 		return(
 			<div className="mission">
+				<BreadCrumbs links={['Home', 'Our Mission']}/>
 				<div className="wrapper page-title">
 					<h1>Our Mission</h1>
 				</div>
-				<section className="block wrapper">
+				<section className="block block--text wrapper">
 					<h2>Linkitz Vision</h2>
 					<p>Linkitz was created as a solution to the lack of technology toys...</p>
 				</section>

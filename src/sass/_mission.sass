@@ -1,14 +1,13 @@
 .mission 
-	:background url('/images/general/Linkitz-bg-blue.gif')
-	.block + .block
-		:margin-top 20px
+	:background url('/images/general/Linkitz-bg-blue.gif')	
+
 	&--stats
 		> div 
 			:color white
 			:width calc((100% / 3) - (40px / 3))
 			:margin-right 20px
 			:margin-bottom 20px
-			:padding 40px 20px
+			:padding 40px 20px 60px
 			:position relative
 			&:nth-of-type(3n + 3)
 				:margin-right 0
@@ -26,9 +25,14 @@
 				:background $cyan
 			span 
 				:position absolute
-				:bottom 20px	
+				:bottom 24px	
 				:left 20px
 				:width calc(100% - 40px)
+				:font-size 10px
+			h3 
+				:font-size 25px
+				:font-weight normal	
+				:margin-top 0
 	.block-image
 		:margin 20px auto
 		img 
