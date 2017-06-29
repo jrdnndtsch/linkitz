@@ -50,8 +50,49 @@ class ProjectSingle extends React.Component {
 		if (instruction.sub_text && instruction.sub_text.length >= 1) {
 			return (
 				<ul>
-					<li>Yeah</li>
+					{instruction.sub_text.map((t, i) => {
+						return(
+							<li key={i}>{t}</li>
+						)
+					})}
 				</ul>
+			)
+		}
+	}
+
+	createUl(a, title) {
+		if (a.length > 0) {
+			return(
+				<section className="project--instructions">
+					<h3>{title}</h3>
+					<ul>
+						{a.map((p, i)=>{
+							return (
+								<li key={i}>{p}</li>
+							)
+						})}
+					</ul>
+				</section>	
+			)
+		}
+	}
+
+	createOl(a, title) {
+		if (a.length > 0) {
+			return(
+				<section className="project--instructions">
+					<h3>{title}</h3>
+					<ol>
+						{a.map((p, i)=>{
+							return (
+								<li key={i}>
+									{p.text}
+									{p.note ? <span className="note"><strong>note:</strong>{p.note}</span> : null}
+									{p.hint ? <span className="hint"><strong>hint:</strong>{p.hint}</span> : null}</li>
+							)
+						})}
+					</ol>
+				</section>	
 			)
 		}
 	}
@@ -75,7 +116,7 @@ class ProjectSingle extends React.Component {
 							<div className="wrapper--flex">
 								<div className="project--parts">
 									<h3>Parts Required</h3>
-									<ul>	
+									<ul className="parts-list">	
 										{this.state.parts.map((part, i) => {
 											return (
 												<li key={i}>
@@ -85,6 +126,7 @@ class ProjectSingle extends React.Component {
 											)
 										})}
 									</ul>
+									{this.createUl(this.state.x_parts, 'Extra Parts')}
 								</div>
 								<div>
 									<h3>Level of difficulty</h3>
@@ -106,19 +148,7 @@ class ProjectSingle extends React.Component {
 							})}
 						</ol>
 					</section>
-					<section className="project--instructions">
-						<h3>Explore</h3>
-						<ol>
-							{this.state.explore.map((ex, i) => {
-								return (
-									<li key={i}>
-										{ex.text}
-										{this.createSubText(ex)}
-									</li>
-								)
-							})}
-						</ol>
-					</section>
+					{this.createOl(this.state.explore, 'Explore')}
 				</div>
 					
 			</main>

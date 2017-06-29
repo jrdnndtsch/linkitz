@@ -16,9 +16,11 @@
 		:padding 40px 30px
 	.wrapper--flex
 		>div
-			:width 50%
+			:width calc(50% - 20px)
+			&:first-of-type
+				:margin-right 40px
 	&--parts
-		ul 
+		ul.parts-list
 			:margin 0
 			:padding 0
 			:list-style 
@@ -53,7 +55,7 @@
 		&.advanced 
 			:background $red	
 	&--instructions
-		ol
+		ol, ul
 			:font-size 13px
 			:margin 0
 			:padding-left 16px

@@ -100,8 +100,8 @@
 		{
 			"title":"BoopIt",
 			"sub_title":"To play BoopIt , Linkitz  gives an instruction through the speaker and you have to follow the instruction. If you succeed, you get the next instruction. It gives the instructions faster and faster as you play. BoopIt is an advanced level and uses more components and there are more parts to the code.",
-			"parts" : ["hub", "USB", "LED", "motion", "speaker", "microphone"],
-			"extra_parts" : [],
+			"parts" : ["hub", "USB", "LED", "motion"],
+			"extra_parts" : ["speaker", "microphone"],
 			"level": "Advanced",
 			"instructions": [
 				{
@@ -186,28 +186,26 @@
 			"parts" : ["hub", "USB", "LED", "Speaker"],
 			"extra_parts" : ["You can also use the Motion petal for more lights, if you don’t have a Speaker petal", "At least two players"],
 			"level": "Medium",
-			"instructions":{
-				"1" : {
+			"instructions":[
+				{
 					"text": "Download the program called Hot Potato from the Saved Program menu." 
 				}, 
-				"2" : {
+				{
 					"text" : "Take a look at the program. You’ll see that it checks to see if a speaker is attached, so it knows if it should make a sound at the end of the game."
 				}, 
-				"3" : {
+				{
 					"text" : "The program uses a timer set to a random amount of time, so the players don’t know when the time will run out. It’s different every time you play the game."
 				}, 
-				"4" : {
+				{
 					"text" : "Load the program to Linkitz"
 				}, 
-				"5" : {
+				{
 					"text" : "The Linkitz will start flashing. Pass the Linkitz from person to person. The flashing gets faster and faster until Linkitz glows solid red. Whoever is holding the Linkitz when it goes red is “out” and has to leave the game. Play again until only one person is left. The last one left is the winner."
 				}, 
-				"6" : {
+				{
 					"text" : "If you have a speaker attached, the Linkitz will glow red and buzz when the timer is up."
 				}
-			},
-			"explore" : [], 
-			"hints" : []
+			]
 		}, 
 		{
 			"title":"Nightlight",
@@ -215,42 +213,41 @@
 			"parts" : ["Hub", "LED", "USB"],
 			"extra_parts" : ["A sheet of letter-size lightweight white printer paper or parchment paper", "Tape", "Scissors", "Pencil", "Ruler"],
 			"level": "Easy",
-			"instructions": {
-				"1" : {
+			"instructions": [
+				{
 					"text" : "Measure 4 inches down from the top of the paper on either side and draw a line from one side of the paper to the other. This will be your folding line."
 				}, 
-				"2" : {
+				{
 					"text" : "Draw another line from one side of the paper to the other, 1 inch below the folding line. This will be your cutting line."
 				}, 
-				"3" : {
+				{
 					"text" : "Cut the paper on the cutting line. We will use the smaller piece*."
 				}, 
-				"4" : {
+				{
 					"text" : "Fold the paper on the folding line. This double-layer of paper will be the base of the nightlight."
 				}, 
-				"5" : {
+				{
 					"text" : "Roll the paper into a tube, keeping the folded edge on the bottom. Don’t overlap the edges too much! Make sure that the tube fits around your Linkitz.  Then tape the tube to keep it rolled."
 				}, 
-				"6" : {
+				{
 					"text" : "Decide on the colors you want your nightlight to glow."
 				}, 
-				"7" : {
+				{
 					"text" : "Get program Nightlight-Easy from the Saved program list. This lets you put in two colors that will take turns lighting for 10 seconds each. Drag your favorite colors to the Fade blocks. If you leave the Fade blocks empty, Linkitz will pick two colors to glow and change them every 10 seconds."
 				}
-			},
-			"explore" :{
-				"1" : {
+			],
+			"explore" :[
+				{
 					"text" : "How would you change Nightlight-Easy to glow in more than two colors?"
 				}, 
-				"2" : {
+				{
 					"text": "Check out how the Fade block works. How would you make each color glow for longer than 10 seconds?", 
 					"note" : "If you use too many colors, or set the glow timer for too long, your batteries might not last for the whole night."
 				}, 
-				"3" : {
+				{
 					"text" : "Keep the larger piece to make a paper airplane http://www.origami-instructions.com/paper-airplanes.html"
 				}
-			}, 
-			"hints" : []
+			]
 		}, 
 		{
 			"title":"Rainbow Flash",
@@ -258,32 +255,32 @@
 			"parts" : ["hub", "LED", "USB", "motion"],
 			"extra_parts" : [],
 			"level": "Medium",
-			"instructions": {
-				"1": {
+			"instructions": [
+				{
 					"text" : "Download the Rainbow Flash code from the Saved Program list."
 				}, 
-				"2" : {
+				{
 					"text" : "The code has three parts."
 				}, 
-				"3" : {
+				{
 					"text" : "The OnStart block sets up a list of rainbow colors, and sets the counter to 0."
 				}, 
-				"4" : {
+				{
 					"text" : "The MotionTrigger block adds one to the counter every time it senses motion, and flashes one color. As the number of your movements gets bigger, the color moves to the next color in the rainbow colors list."
 				}, 
-				"5" : {
+				{
 					"text" : "The Timing block checks every second to see if the counter has reached the goal (127).  If it has, it flashes the whole rainbow and then resets the counter to zero."
 				}, 
-				"6" : {
+				{
 					"text" : "Load the code to Linkitz, and start moving. When you see the rainbow flash, YAY! You did it!"
 				}
-			},
-			"explore" : {
-				"1" : {
+			],
+			"explore" : [
+				{
 					"text" : "Does anyone you know wear a FitBit™ on their wrist? Many grown ups use these to make sure they walk 10,000 steps a day.  The biggest number Linkitz can count to is 127.  Can you think if a way to get Linkitz to count to higher numbers?",
 					"hint" : "Use another counter. What is 127 x 127?"
 				}
-			}
+			]
 		}, 
 		{
 			"title":"Red Light Green Light",
@@ -291,27 +288,26 @@
 			"parts" : ["hub", "LED", "USB"],
 			"extra_parts" : ["You can also use the motion link too", "At least 3 players"],
 			"level": "Easy",
-			"instructions":{
-				"1" : {
+			"instructions":[
+				{
 					"text" : "Download the program called Red Light Green Light from the Saved Programs menu."
 				}, 
-				"2" : {
+				{
 					"text" : "This program uses random to flash red then green, over and over, for different amounts of time."
 				}, 
-				"3" : {
+				{
 					"text" : "Load it to your Linkitz."
 				}, 
-				"4" : {
+				{
 					"text" : "To play:", 
 					"sub_text" : ["To play, one person is chosen to be the traffic cop.", "All the players stand on the starting line and the traffic cop stands with her back to the rest of the players.", "When the Linkitz flashes green the traffic cop shouts “Green light”. The other players try to run to the finish line.", "When the Linkitz flashes red, the traffic cop shouts \"red light,\" and turns around. The other players have to freeze.", "If the traffic cop catches a player moving, she sends them back to the starting line.", "The first person to cross the finish line wins, and becomes the new traffic cop."]
 				}
-			},
-			"explore" : {
-				"1" : {
+			],
+			"explore" : [
+				{
 					"text": "Change the program to flash red or green randomly, instead of always green-red-green-red. If you shout “red light” when everyone is already frozen, sometimes people start to run!"
 				}
-			}, 
-			"hints" : []
+			]
 		}, 
 		{
 			"title":"Rock Paper Scissors",
@@ -330,8 +326,7 @@
 					"text" : "Linkitz will flash green three times (counting to three) and then show a pattern of lights.", 
 					"sub_text" : ["Rock is the smallest hand sign, so if Linkitz chooses rock, it will only light the hub (red lights for rock). If you threw paper, you win because paper covers rock. But if you threw scissors, Linkitz wins, because rock breaks scissors.", "Paper is the biggest hand sign so if Linkitz chooses paper, it lights the hub and all three petals (purple lights for paper). If you threw scissors, you win, because scissors cut paper. But if you threw rock, you lose, because paper covers rock.", "Scissors hand sign looks like a V, so if Linkitz chooses scissors, it will light up two petals and the hub, making a V shape from lights (sapphire blue for scissors). If you threw rock, you win, because rock breaks scissors. But if you threw paper, you lose, because scissors cut paper.", "Did you win? Try again! Linkitz will play 10 times."]
 				}
-			],
-			"explore" : []
+			]
 		}, 
 		{
 			"title":"Simone",
@@ -359,11 +354,39 @@
 					"text" : "If you don’t repeat the pattern in time, or make a mistake, you’ll get a sad  pattern and the game will start again."
 				}
 			],
-			"explore" : {
-				"1" : {
+			"explore" : [
+				{
 					"text" : "Once you can easily repeat a pattern of 10, change the game to make a longer pattern."
 				}
-			}
+			]
+		},
+		{
+			"title" : "Team Spirit", 
+			"sub_title" : "Your Linkitz can help you cheer your team on in the Big Game!", 
+			"parts" : ["hub", "LED", "USB", "Motion"], 
+			"extra_parts" : [], 
+			"level" : "Easy", 
+			"instructions" : [
+				{
+					"text" : "Do you know your favorite team’s colors? Here at Linkitz our favorite team’s colors are red and blue."
+				}, 
+				{
+					"text" : "Write a program that makes your Linkitz flash your team’s colors whenever you clap."
+				}, 
+				{
+					"text" : "If one of your team’s color’s is black, the LEDs won’t light up at all, so don’t be surprised. You may want to skip using black.",
+					"hint" : "you need two blocks, Motion Trigger and Flash, plus the color blocks"
+				}, 
+				{
+					"text" : "You can see our code in the Saved Program list. Ours flashes red and blue at the same time."
+				}
+			], 
+			"explore" : [
+				{
+					"text": "How would you make Linkitz flash first red, then blue?", 
+					"hint" : "Check out <a>tutorial 4</a> if  you forgot how to do this."
+				}
+			]
 		}
 	], 
 	"help" : [
