@@ -41,56 +41,127 @@
 		"modules" : [
 			{
 				"format" : "video",
-				"title" : "First Video", 
-				"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
-				"video" : "https://vimeo.com/220887182", 
+				"title" : "Make It Work", 
+				"desc" : "With Linkitz, you can make different toys, learn to code, and create all kinds of games. Here’s everything you need to know to get started.", 
+				"video" : "MakeItWork_640.mov", 
 				"index" : 1
-			},
-			{
-				"format" : "slide",
-				"index" : 2,
-				"slides" : [
-					{
-						"order" : 1,
-						"title" : "first slide in slideshow", 
-						"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nisi ducimus, nam odio quisquam cumque alias fugit ipsum dolorem, eveniet?", 
-						"image" : "http://theredlist.com/media/database/muses/couples/fiction/thelma-and-louise/010-thelma-and-louise-theredlist.jpg"
-					}, 
-					{
-						"order" : 2,
-						"title" : "second slide", 
-						"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nisi ducimus, nam odio quisquam cumque alias fugit ipsum dolorem, eveniet?", 
-						"image" : "http://theredlist.com/media/database/muses/couples/fiction/thelma-and-louise/010-thelma-and-louise-theredlist.jpg"
-					}
-				] 
 			}
 		]
 	}, 
 	"tutorials" : [
 		{
+			"title" : "Explore The App", 
+			"desc" : "Get to know the parts of the Linkitz app.", 
+			"modules" : [
+				{
+				"type" : "video",
+				"title" : "Explore The App", 
+				"desc" : "Get to know the parts of the Linkitz app.", 
+				"video" : "ExploreTheApp.mp4", 
+				"index" : 1
+				}
+			]
+		},
+		{
 			"title" : "Hello World", 
-			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, qui.", 
-			"image" : "http://www.fillmurray.com/300/300", 
+			"desc" : "Computer programmers call their very first program “Hello, World”. The first program we code will make Linkitz flash in different, random colors.", 
 			"modules" : [
 				{
 					"type" : "video",
-					"title" : "First Video", 
-					"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
-					"video" : "HelloWorld.mov", 
+					"title" : "Hello World", 
+					"desc" : "Computer programmers call their very first program “Hello, World”. The first program we code will make Linkitz flash in different, random colors.", 
+					"video" : "HelloWorld.mp4", 
 					"index" : 1
 				}
 			]
 		}, 
 		{
 			"title" : "Pick A Color", 
-			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, qui.", 
-			"image" : "http://www.fillmurray.com/300/300", 
+			"desc" : "The color blocks let you pick the colors you want your Linkitz to flash.", 
 			"modules" : [
 				{
 					"type" : "video",
-					"title" : "Hello World Again Video", 
-					"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, cupiditate alias obcaecati, ipsum maiores, dignissimos animi aperiam nobis eum inventore numquam est neque voluptate! Saepe tenetur aspernatur officiis temporibus ab!", 
-					"video" : "HelloWorld.mov", 
+					"title" : "Pick A Color", 
+					"desc" : "The color blocks let you pick the colors you want your Linkitz to flash.", 
+					"video" : "PickAColor.mp4", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "Color Controls", 
+			"desc" : "Use multiple flash blocks to control which petals light up.", 
+			"modules" : [
+				{
+					"type" : "video",
+					"title" : "Color Controls", 
+					"desc" : "Use multiple flash blocks to control which petals light up.", 
+					"video" : "ColorControls.mp4", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "Starting Up", 
+			"desc" : "If you want to do something once at the beginning of your code, you use the OnStart block", 
+			"modules" : [
+				{
+					"type" : "video", 
+					"title" : "Starting Up", 
+					"desc" : "If you want to do something once at the beginning of your code, you use the OnStart block",
+					"video" : "StartingUp.mp4", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "Make A List", 
+			"desc" : "Lists are a way of keeping track of many things that you want your code to work on. We can use a list to make Linkitz flash colors in sequence.", 
+			"modules" : [
+				{
+					"type" : "video", 
+					"title" : "Make A List", 
+					"desc" : "Lists are a way of keeping track of many things that you want your code to work on. We can use a list to make Linkitz flash colors in sequence.",
+					"video" : "MakeAList.mp4", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "It’s Random", 
+			"desc": "Random means something happens by chance, like tossing dice. It’s used frequently when you are coding games. Here we’ll use the random block so Linkitz picks a random color to flash.", 
+			"modules": [
+				{
+					"type" : "video", 
+					"title" : "It’s Random", 
+					"desc": "Random means something happens by chance, like tossing dice. It’s used frequently when you are coding games. Here we’ll use the random block so Linkitz picks a random color to flash.", 
+					"video" : "ItsRandom.mp4", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "Introducing Loops", 
+			"desc" : "Loops are used to repeat a series of instructions as many times as you want. In this lesson, we’ll make Linkitz flash three colors in a row, over and over. ", 
+			"modules" : [
+				{
+					"type" : "video", 
+					"title" : "Introducing Loops", 
+					"desc" : "Loops are used to repeat a series of instructions as many times as you want. In this lesson, we’ll make Linkitz flash three colors in a row, over and over. ",
+					"video" : "IntroducingLoops.mp4", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "Move It!", 
+			"desc" : "Make your Linkitz do something when it is moved or tilted.",
+			"modules" : [
+				{
+					"type" : "video", 
+					"title" : "Move It!", 
+					"desc" : "Make your Linkitz do something when it is moved or tilted.",
+					"video" : "MoveIt.mp4", 
 					"index" : 1
 				}
 			]

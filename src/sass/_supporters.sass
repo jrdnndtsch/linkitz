@@ -1,6 +1,50 @@
 .supporters
+	:padding-bottom 1px
 	:background url('/images/general/Linkitz-bg-blue.gif')
+	&--map
+		:background white
+		:margin-bottom 40px
+		>div 
+			&:first-of-type
+				:width 70%
+				:position relative
+				img 
+					:display block
+			&:last-of-type
+				:width 30%
+				:padding 40px 30px
+				h2 
+					:font-family $body-font
+					:font-size 20px
+					:margin-top 0
+
+
+		&_callout
+			:position absolute	
+			:background white
+			:width 120px
+			:height 120px
+			:border-radius 50%
+			:bottom 20px
+			:left 20px
+			:text-align center
+			:display flex
+			:align-items center
+			:justify-content center
+			:flex-wrap wrap
+			strong
+				:display block
+				:width 100%	
+				:font-size 30px
+				:margin-bottom 12px
+			span 
+				:display block
+				:font-weight bold
+				:font-size 10px	
+				:line-height 14px	
+
 .stem 
+	:margin-bottom 60px
 	.block
 		:justify-content center 
 		> div 

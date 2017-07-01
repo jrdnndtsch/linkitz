@@ -24,7 +24,8 @@ class Mission extends React.Component {
 				</div>
 				<section className="block block--text wrapper">
 					<h2>Linkitz Vision</h2>
-					<p>Linkitz was created as a solution to the lack of technology toys...</p>
+					<p>Linkitz was created as a solution to the lack of technology toys designed for and marketed to girls. Of the toys that are currently available for girls many do not feature development of spatial skills, problem solving and confidence with technology as central themes. This leaves many girls without products that specifically connect to their interests and social play styles.</p>
+					<p>Currently, girls start losing interest in STEM as early as age 8. This is a problem as educators and developmental psychologists agree that STEM interest should be nurtured from a young age, when early experiences shape lives. Linkitz believes that by encouraging girls to play with technology today, we can inspire a future generation of women with a lifelong love of STEM.</p>
 				</section>
 				<section className="block-image wrapper wrapper--flex">
 					<div>

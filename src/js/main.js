@@ -7,6 +7,7 @@ import { BrowserRouter as Router,
 import db from './db.json';
 
 import Nav from './components/Nav.js';
+import Footer from './components/Footer.js';
 import Home from './components/Home.js';
 import Work from './components/Work.js';
 import Learn from './components/Learn.js';
@@ -19,6 +20,7 @@ import Supporters from './components/Supporters.js';
 import TutorialSingle from './components/TutorialSingle.js';
 import ProjectSingle from './components/ProjectSingle.js';
 import Make from './components/Make.js';
+import Contact from './components/Contact.js';
 
 require('../sass/styles.sass')
 class Main extends React.Component {
@@ -45,8 +47,8 @@ class Main extends React.Component {
           <Route path="/our-mission" component={Mission} />
           <Route path="/linkitz-team" component={Team} />
           <Route path="/supporters" component={Supporters} />
-
-
+          <Route path="/contact" component={Contact} />
+          <Footer />
         </div>
       </Router>
 		)

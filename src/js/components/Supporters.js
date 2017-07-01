@@ -19,11 +19,6 @@ class Supporters extends React.Component {
 
 	}
 
-	// buildImg(name) {
-	// 	let img_ref = name.toLowerCase().split(' ').join('_')
-	// 	return img_ref
-
-	// }
 	componentDidMount() {
 		let stem = db.supporters.stemspiration.map((p) => {
 		 return {full_name: this.buildName(p), image: buildImg(p)}
@@ -35,8 +30,27 @@ class Supporters extends React.Component {
 	render() {
 		return(
 			<div className="supporters">
+				<div className="wrapper page-title">
+					<h1>Our Supporters</h1>
+				</div>
+				<section className="supporters--map wrapper wrapper--flex">
+					<div>
+						<img src="/images/general/supporters-map.png"/>
+						<div className="supporters--map_callout">
+							<span>			
+								<strong>680</strong>
+								Supporters from around the world
+							</span>
+						</div>
+					</div>
+					<div>
+						<h2>You Made It Happen</h2>
+						<p>With the help of our 680 backers, Linkitz raised over $100,000 on Kickstarter between May and Jun 2015.</p>
+						<p>Thank you to all the supporters who helped make Linkitz happen!</p>
+					</div>
+				</section>
 				<section className="stem wrapper">
-					<h2>Stem-Spiration</h2>
+					<h2 className="sub-title">Stem-Spiration</h2>
 					<div className="block wrapper--flex">
 						{this.state.stemspiration.map((p, i) => {
 							return (

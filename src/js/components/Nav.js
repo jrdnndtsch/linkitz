@@ -21,10 +21,12 @@ class Nav extends React.Component {
 					<li>
 						<Link to="/mission">About Us</Link>
 						<ul>
-							<li><Link to="/our-mission">Mission</Link></li>
-							<li><Link to="/linkitz-team">Team</Link></li>
+							<li><Link to="/our-mission">Our Mission</Link></li>
+							<li><Link to="/linkitz-team">Linkitz Team</Link></li>
+							<li><Link to="/supporters">Our Supporters</Link></li>
 						</ul>
 					</li>
+					<li><Link to="/contact">Contact</Link></li>
 				</ul>
 			</nav>
 		)

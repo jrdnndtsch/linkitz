@@ -2,7 +2,7 @@ import React from 'react';
 import db from '../db.json';
 
 import VideoBlock from './VideoBlock.js';
-import SlideShowBlock from './SlideShowBlock.js';
+import BreadCrumbs from './BreadCrumbs.js';
 
 class Work extends React.Component {
 
@@ -20,14 +20,15 @@ class Work extends React.Component {
 	}
 	render() {
 		return(
-			<div>
-				<h2>Make it Work</h2>
-				<h3>How To's</h3>
+			<div className="work">
+				<BreadCrumbs links={['Home', 'Learn', 'Make it work']}/>
+				<div className="wrapper page-title">
+					<h1>Make it Work</h1>
+					<h2 className="sub-title">How To's</h2>
+				</div>
 				{this.state.how_tos.map((mod, i) => {
 					if(mod.format == "video") {
 						return <VideoBlock data={mod} key={i} />
-					}else if(mod.format == "slide") {
-						return <SlideShowBlock data={mod} key={i} />
 					}
 				})}
 			</div>
