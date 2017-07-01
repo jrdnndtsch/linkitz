@@ -53,11 +53,19 @@ class Code extends React.Component {
 					<h2 className="sub-title">Coding Tutorials</h2>
 					<div className="wrapper--flex">
 						{this.state.tutorials.map((tut, i) => {
-							return (
-								<Link to={`tutorial/${makeParam(tut.title)}`} key={i} className="grid--quarter">
-									<TutorialBlock data={tut} url="tutorials" ext="png"/> 
-								</Link>
-							)
+							if(tut.modules.length >= 1) {
+								return (
+									<Link to={`tutorial/${makeParam(tut.title)}`} key={i} className="grid--quarter">
+										<TutorialBlock data={tut} url="tutorials" ext="png"/> 
+									</Link>
+								)
+							} else {
+								return (
+									<div className="grid--quarter" key={i}>
+										<TutorialBlock data={tut} url="tutorials" ext="png" coming_soon={true} /> 
+									</div>
+								)
+							}
 						})}
 					</div>
 				</section>

@@ -3,9 +3,70 @@ nav
 	:max-width 1300px
 	:margin 0 auto
 	:align-items center
+	:position relative
+	+display-for(sm xs)
+		:justify-content space-between
+		:padding 0 18px
+	.hamburger
+		:display none
+		+display-for(sm xs) 
+			:display block
+			:transition all 0.3s
+			:padding 12px 0 18px
+			&:hover 
+				&:before
+					:transform translate3d(0, -1px, 0)
+				&:after 
+					:transform translate3d(0, 1px, 0)
+			&:before, &:after
+				:content ' '
+				:width 32px
+				:height 4px
+				:background $orange
+				:display block
+				:margin-top 6px
+				:transition all 0.3s
+			span
+				:width 32px
+				:height 4px
+				:margin-top 6px
+				:display block
+				:background $orange
+				:transition all 0.3s	
+	.hamburger.active	
+		+display-for(sm xs)
+			:padding 11px 0 17px
+			span 
+				:opacity 0
+				:width 28px
+				:height 4px
+				:transform translate3d(0, 0, 0) rotate(45deg)
+			&:before
+				:transform translate3d(0, 10px, 0) rotate(45deg)
+				:width 22px
+				:height 4px
+			&:after
+				:transform translate3d(0, -10px, 0) rotate(-45deg)
+				:width 22px
+				:height 4px
+				
 	.logo
 		:width 160px
 		:margin-right 40px
+	ul.nav-main 
+		+display-for(sm xs)
+			:display none
+			:position absolute	
+			:top 100%
+			:left 0
+			:background white
+			:width 100%
+			:height 100vh
+			:flex-direction column
+			:z-index 100
+	ul.nav-main.active
+		+display-for(sm xs)
+			:display block		
 	ul 
 		:display flex
 		:margin 0
@@ -16,12 +77,20 @@ nav
 				:text-transform uppercase
 				:color $orange
 				:text-decoration none
-				:padding 20px
 				:display inline-block
-				:min-width 150px
-				:text-align center
 				:font-size 16px
 				:font-weight bold
+				+display-for(xl lg md)
+					:text-align center
+					:padding 20px
+					:min-width 150px
+				+display-for(sm xs)
+					:padding 12px
+					:border-top 1px solid $orange
+					:width 100%
+					&:hover
+						:background $orange
+						:color white
 		li 
 			:position relative
 			ul 
@@ -32,26 +101,35 @@ nav
 					:font-size 14px
 					:font-weight semi-bold	
 					:color white
-			&:hover 
-				:background $orange
-				a
-					:color white
-				ul 
-					:display block
-					li 
-						&:hover
-							:background darken($orange, 10%)
+			+display-for(xl lg md)		
+				&:hover 
+					:background $orange
+					a
+						:color white
+					ul 
+						:display block
+						li 
+							&:hover
+								:background darken($orange, 10%)
 
 
 		ul 
-			:display none
-			:position absolute
-			:top 100%
-			:background $orange
-			:color white
-			:left 0
-			:z-index 10
-			:width 100%
+			+display-for(xl lg md)
+				:display none
+				:position absolute
+				:top 100%
+				:background $orange
+				:color white
+				:left 0
+				:z-index 10
+				:width 100%
+			+display-for(sm xs)	
+				:display block
+				li 
+					a 
+						:text-align left
+						:color $orange
+						:padding-left 24px
 .bread-crumbs
 	:background rgba(0,0,0,0.3)
 	:padding 12px 0

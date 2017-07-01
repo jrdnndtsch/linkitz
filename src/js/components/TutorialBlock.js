@@ -18,6 +18,7 @@ class TutorialBlock extends React.Component {
 					<div className={`block--content ${this.props.url}`}>	
 						<h3>{this.props.data.title}</h3>
 						{this.props.data.level ? <span>Level: <strong className={this.props.data.level.toLowerCase()}>{this.props.data.level}</strong></span> : null}
+						{this.props.coming_soon ? <span className="coming-soon">Coming Soon</span> : null}
 					</div>
 			</article>
 		)

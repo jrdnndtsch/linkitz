@@ -165,6 +165,29 @@
 					"index" : 1
 				}
 			]
+		}, 
+		{
+			"title" : "If… Then", 
+			"desc" : "The If-Then block lets your code do different things depending on different conditions.", 
+			"modules" : [
+				{
+					"type" : "video", 
+					"title" : "If… Then", 
+					"desc" : "The If-Then block lets your code do different things depending on different conditions.", 
+					"video" : "IfThen.mp4", 
+					"index" : 1
+				}
+			]
+		}, 
+		{
+			"title" : "If…then…Else", 
+			"desc": "Coming soon!", 
+			"modules" : []
+		}, 
+		{
+			"title" : "Make It Count", 
+			"desc": "Coming soon!", 
+			"modules" : []
 		}
 	], 
 	"projects" : [
