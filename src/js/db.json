@@ -277,8 +277,8 @@
 		{
 			"title":"Hot Potato",
 			"sub_title":"Pass the Linkitz from person to person. Don’t be left holding Linkitz when the buzzer sounds!",
-			"parts" : ["hub", "USB", "LED", "Speaker"],
-			"extra_parts" : ["You can also use the Motion petal for more lights, if you don’t have a Speaker petal", "At least two players"],
+			"parts" : ["hub", "USB", "LED"],
+			"extra_parts" : ["Speaker","You can also use the Motion petal for more lights, if you don’t have a Speaker petal", "At least two players"],
 			"level": "Medium",
 			"instructions":[
 				{

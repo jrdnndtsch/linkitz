@@ -9,8 +9,16 @@
 			:margin-bottom 20px
 			:padding 40px 20px 60px
 			:position relative
-			&:nth-of-type(3n + 3)
-				:margin-right 0
+			+display-for(xl lg)
+				&:nth-of-type(3n + 3)
+					:margin-right 0
+			+display-for(md sm)
+				:width calc(50% - 10px)
+				&:nth-of-type(2n + 2)
+					:margin-right 0
+			+display-for(xs)
+				:width 100%	
+				:margin-right 0	
 			&:nth-of-type(6n + 1)
 				:background $purple
 			&:nth-of-type(6n + 2)
@@ -40,6 +48,11 @@
 		div 
 			&:first-of-type
 				:width 70%
+				+display-for(lg)
+					:width 50%
+				+display-for(md sm xs)
+					:width 100%
+
 			&:last-of-type
 				:width 30%
 				:background white	
@@ -48,6 +61,14 @@
 				:justify-content center
 				:flex-direction column
 				:padding 40px
+				+display-for(lg)
+					:padding 20px	
+					:width 50%
+				+display-for(md sm xs)
+					:width 100%
+					:align-items flex-start
 				p
 					:font-size 25px
 					:font-family $header-font
+					+display-for(lg)
+						:font-size 18px

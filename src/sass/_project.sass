@@ -1,5 +1,6 @@
 .project 
 	:background url('/images/general/Linkitz-bg-red.gif')
+	:padding-bottom 1px
 	h1 
 		:font-size 50px
 		:font-family $header-font
@@ -14,11 +15,21 @@
 		:font-size 20px
 	.block
 		:padding 40px 30px
+		:margin 60px auto
 	.wrapper--flex
 		>div
 			:width calc(50% - 20px)
 			&:first-of-type
 				:margin-right 40px
+				+display-for(sm xs)
+					:margin-right 0
+			+display-for(sm xs)
+				:width 100%
+			.wrapper--flex
+				>div 
+					+display-for(md)
+						:width 100%	
+
 	&--parts
 		ul.parts-list
 			:margin 0
@@ -32,6 +43,8 @@
 				:align-items center
 				:font-size 16px
 				:margin-bottom 20px
+				+display-for(lg)
+					:width 100%
 				span 
 					:margin-left 10px
 					:text-transform capitalize	
@@ -60,4 +73,6 @@
 			:margin 0
 			:padding-left 16px
 			li 
-				:margin-bottom 24px								
+				:margin-bottom 24px	
+				ul 
+					:margin-top 12px							
