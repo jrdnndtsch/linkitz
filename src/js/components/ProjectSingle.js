@@ -104,7 +104,7 @@ class ProjectSingle extends React.Component {
 	render() {
 		return(
 			<main className="project">
-				<BreadCrumbs links={['Home', 'Learn', 'Make Cool Stuff', this.state.title]}/>
+				<BreadCrumbs links={['Home', 'Learn', 'Make Cool Stuff', {link: 'projects', title: this.state.title}]}/>
 				<div className="wrapper block">
 					<section className="wrapper--flex">
 						<div>

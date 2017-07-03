@@ -1,6 +1,8 @@
 .tutorial 
 	:background url('/images/general/Linkitz-bg-green.gif')
 	:padding 1px 0
+	.tutorial--video
+		:margin-top 60px
 	&--video
 		:margin-bottom 60px
 		&_container
@@ -8,10 +10,14 @@
 			video 
 				:width 100%
 				:display block
+			+display-for(md sm xs)
+				:width 100%	
 		aside
 			:width 35%
 			:background white
 			:padding 40px
+			+display-for(md sm xs)
+				:width 100%
 			h3 
 				:font-size 20px
 				:font-family $body-font

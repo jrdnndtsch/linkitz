@@ -26,14 +26,30 @@ require('../sass/styles.sass')
 class Main extends React.Component {
 	constructor() {
 		super();
+    this.state = {
+      menu_active : false
+    }
 
 	}
+
+  openMenu() {
+    let menu_state = !this.state.menu_active
+    this.setState({
+      menu_active: menu_state
+    })
+  }
+
+  closeMenu() {
+    this.setState({
+      menu_active: false
+    })
+  }
 
 	render() {
 		return(
 			<Router>
         <div>
-          <Nav />
+          <Nav menu_active={this.state.menu_active} open_menu={this.openMenu.bind(this)} close_menu={this.closeMenu.bind(this)}/>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route path="/learn" component={Learn} />

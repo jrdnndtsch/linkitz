@@ -14,7 +14,11 @@ class BreadCrumbs extends React.Component {
 			<div className="bread-crumbs">
 				<div className="wrapper">
 					{this.props.links.map((l, i) => {
-						return <Link to={`/${makeParam(l)}`} key={i}>{l}</Link>
+						if (typeof l === 'object') {
+							return <Link to={`/${l.link}/${makeParam(l.title)}`} key={i}>{l.title}</Link>
+						}else {
+							return <Link to={`/${makeParam(l)}`} key={i}>{l}</Link>
+						}
 					})}
 				</div>
 			</div>

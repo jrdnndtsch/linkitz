@@ -12,7 +12,8 @@ class TutorialSingle extends React.Component {
 
 		this.state = {
 			lesson: {}, 
-			modules: []
+			modules: [], 
+			title: ''
 		}
 	}
 
@@ -22,7 +23,8 @@ class TutorialSingle extends React.Component {
 		})
 		this.setState({
 			lesson: content[0],
-			modules: content[0].modules
+			modules: content[0].modules, 
+			title: content[0].title
 		})
 	}
 
@@ -37,7 +39,7 @@ class TutorialSingle extends React.Component {
 	render() {
 		return(
 			<main className="tutorial">
-				<BreadCrumbs links={['Home', 'Learn', 'Learn to Code']}/>
+				<BreadCrumbs links={['Home', 'Learn', 'Learn to Code', {link: 'tutorial', title: this.state.title}]}/>
 				{this.state.modules.map((mod, i) => {
 						return (
 							<div key={i} className="wrapper wrapper--flex tutorial--video">

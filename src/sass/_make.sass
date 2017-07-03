@@ -1,6 +1,7 @@
 .make 
 	:background url('/images/general/Linkitz-bg-red.gif')
 	&--filters
+		:margin -20px 0 12px
 		ul 
 			:margin 0
 			:padding 0
@@ -12,6 +13,8 @@
 				:margin 12px
 				:position relative
 				:cursor pointer
+				&:first-of-type
+					:margin-left 0
 				&.active
 					:font-weight bold
 				&:after

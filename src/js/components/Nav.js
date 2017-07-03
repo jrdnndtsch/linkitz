@@ -1,19 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 class Nav extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			menu_active : false
-		}
-	}
-
-	openMenu() {
-		let menu_state = !this.state.menu_active
-		this.setState({
-			menu_active: menu_state
-		})
-	}
 
 	render() {
 		return(
@@ -21,7 +8,7 @@ class Nav extends React.Component {
 				<div className="logo">
 					<Link to="/"><img src="/images/general/logo.svg"/></Link>
 				</div>
-				<ul className={`nav-main ${this.state.menu_active ? 'active' : null}`} onClick={this.openMenu.bind(this)}>
+				<ul className={`nav-main ${this.props.menu_active ? 'active' : null}`} onClick={this.props.close_menu.bind(this)}>
 					<li><Link to="/learn">Learn</Link>
 						<ul>
 							<li><Link to="/learn">Learn All</Link></li>
@@ -42,7 +29,7 @@ class Nav extends React.Component {
 					</li>
 					<li><Link to="/contact">Contact</Link></li>
 				</ul>
-				<a href="#" className={`hamburger ${this.state.menu_active ? 'active' : null}`} onClick={this.openMenu.bind(this)}>
+				<a href="#" className={`hamburger ${this.props.menu_active ? 'active' : null}`} onClick={this.props.open_menu.bind(this)}>
 					<span></span>
 				</a>
 			</nav>
