@@ -8,11 +8,15 @@
 			&:first-of-type
 				:width 70%
 				:position relative
+				+display-for(md sm xs)
+					:width 100%
 				img 
 					:display block
 			&:last-of-type
 				:width 30%
 				:padding 40px 30px
+				+display-for(md sm xs)
+					:width 100%
 				h2 
 					:font-family $body-font
 					:font-size 20px
@@ -50,6 +54,12 @@
 		> div 
 			:width calc(100% / 8)
 			:text-align center
+			+display-for(md)
+				:width calc(100% / 6)
+			+display-for(sm)
+				:width calc(100% / 4)
+			+display-for(xs)
+				:width calc(100% / 2)		
 			img 
 				:width 80px 
 				:height 80px

@@ -4,6 +4,7 @@ import { makeParam } from './../lib/helpers.js';
 import { Link } from 'react-router-dom';
 
 import db from '../db.json';
+let base = "/"
 
 class BreadCrumbs extends React.Component {
 	
@@ -15,9 +16,9 @@ class BreadCrumbs extends React.Component {
 				<div className="wrapper">
 					{this.props.links.map((l, i) => {
 						if (typeof l === 'object') {
-							return <Link to={`/${l.link}/${makeParam(l.title)}`} key={i}>{l.title}</Link>
+							return <Link to={`${base}${l.link}/${makeParam(l.title)}`} key={i}>{l.title}</Link>
 						}else {
-							return <Link to={`/${makeParam(l)}`} key={i}>{l}</Link>
+							return <Link to={`${base}${makeParam(l)}`} key={i}>{l}</Link>
 						}
 					})}
 				</div>

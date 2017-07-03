@@ -48,6 +48,10 @@ class Contact extends Component {
 		return(
 			<div className="contact">
 				<BreadCrumbs links={['Home', 'Contact']}/>
+				<div className="wrapper page-title">
+					<h1>Have a question or comment?</h1>
+					<h2 className="sub-title">We'd Love To Hear From You!</h2>
+				</div>
 				<div className="wrapper wrapper--flex"> 
 					<form action="https://script.google.com/macros/s/AKfycbyL26HYDItBAAEVtEYY9FGtQ1ehwKxdlViWC6p5ls8OFGAzDZCR/exec" method="post">
 						<span>* Required fields</span>
@@ -56,7 +60,7 @@ class Contact extends Component {
 						<input type="email" name="email" placeholder="*Email Address" required/>
 						<input type="email" name="email_subject" placeholder="Email Subject" required/>
 						<textarea name="message" placeholder="*Message" required></textarea>
-						<input type="submit" value="Send"/>
+						<input type="submit" value="Send" className="button"/>
 					</form>
 					<div className="image">
 						<img src="/images/general/Linkitz-product-3.png"/>

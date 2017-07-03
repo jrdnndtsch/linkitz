@@ -1,5 +1,6 @@
 .team 
 	:background url('/images/general/Linkitz-bg-blue.gif')
+	:padding-bottom 1px
 	&--members
 		>div 
 			:color white
@@ -12,12 +13,21 @@
 				:background $green
 			&:nth-of-type(4)
 				:background $red	
+				:margin-bottom 60px
 			div 
 				&:first-of-type
 					:width 20%
 					:text-align center
+					+display-for(md sm)
+						:width 35%
+					+display-for(xs)
+						:width 100%	
 				&:last-of-type
 					:width 80%
+					+display-for(md sm)
+						:width 65%
+					+display-for(xs)
+						:width 100%
 		.wrapper--flex
 			:align-items center							
 			img 

@@ -7,6 +7,8 @@ import db from '../db.json';
 
 import { makeParam } from './../lib/helpers.js';
 
+let base = "/"
+
 class Code extends React.Component {
 	constructor() {
 		super();
@@ -55,7 +57,7 @@ class Code extends React.Component {
 						{this.state.tutorials.map((tut, i) => {
 							if(tut.modules.length >= 1) {
 								return (
-									<Link to={`tutorial/${makeParam(tut.title)}`} key={i} className="grid--quarter">
+									<Link to={`${base}tutorial/${makeParam(tut.title)}`} key={i} className="grid--quarter">
 										<TutorialBlock data={tut} url="tutorials" ext="png"/> 
 									</Link>
 								)

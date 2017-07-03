@@ -3,6 +3,8 @@ import MainSection from './MainSection.js';
 
 import db from '../db.json'
 
+let base = "/linkitz-dev/"
+
 class Home extends React.Component {
 	constructor() {
 		super();
@@ -60,14 +62,14 @@ class Home extends React.Component {
 			<div className="home">
 				<header>
 					<div className="circle">
-						<img className="featured" id="featured" src={`./images/general/${this.state.header_content[this.state.featured_content].image}.png`}/>
-						<h1><span>{this.state.header_content[this.state.featured_content].text}</span><img src="./images/general/logo-light.svg"/></h1>
+						<img className="featured" id="featured" src={`/images/general/${this.state.header_content[this.state.featured_content].image}.png`}/>
+						<h1><span>{this.state.header_content[this.state.featured_content].text}</span><img src="/images/general/logo-light.svg"/></h1>
 						<h2>Linkitz is a wearable electronic kit for kids</h2>
-						<a href="#"><span>Get Started</span><img src="./images/general/down-arrow.png"/></a>
+						<a href="#"><span>Get Started</span><img src="/images/general/down-arrow.png"/></a>
 						<div className="home--order">
 							<p>Order Linkitz</p>
-							<span className="order--arrow"><img src="./images/general/order-arrow.png"/></span>
-							<img className="order--product" src="./images/general/linkitz-product-1.png"/>
+							<span className="order--arrow"><img src="/images/general/order-arrow.png"/></span>
+							<img className="order--product" src="/images/general/linkitz-product-1.png"/>
 						</div>
 					</div>
 				</header>

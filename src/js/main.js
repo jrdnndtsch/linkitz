@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, 
-    Route, Link } from 'react-router-dom';
+    Route, Link, HashRouter, IndexRoute } from 'react-router-dom';
 
 
 import db from './db.json';
@@ -21,6 +21,8 @@ import TutorialSingle from './components/TutorialSingle.js';
 import ProjectSingle from './components/ProjectSingle.js';
 import Make from './components/Make.js';
 import Contact from './components/Contact.js';
+
+let base = "/"
 
 require('../sass/styles.sass')
 class Main extends React.Component {
@@ -47,29 +49,53 @@ class Main extends React.Component {
 
 	render() {
 		return(
-			<Router>
+			<HashRouter>
         <div>
           <Nav menu_active={this.state.menu_active} open_menu={this.openMenu.bind(this)} close_menu={this.closeMenu.bind(this)}/>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route path="/learn" component={Learn} />
-          <Route path="/learn-to-code" component={Code} />
-          <Route path="/tutorial/:title" component={TutorialSingle} />
-          <Route path="/make-it-work" component={Work} />
-          <Route path="/make-cool-stuff" component={Make} />
-          <Route path="/projects/:title" component={ProjectSingle} />
-          <Route path="/help" component={Help} />
-          <Route path="/faq" component={Faq} />
-          <Route path="/our-mission" component={Mission} />
-          <Route path="/linkitz-team" component={Team} />
-          <Route path="/supporters" component={Supporters} />
-          <Route path="/contact" component={Contact} />
+            <Route exact path={base} component={Home} />
+            <Route exact path={`${base}home`} component={Home} />
+            <Route path={`${base}learn`} component={Learn} />
+            <Route path={`${base}learn-to-code`} component={Code} />
+            <Route path={`${base}tutorial/:title`} component={TutorialSingle} />
+            <Route path={`${base}make-it-work`} component={Work} />
+            <Route path={`${base}make-cool-stuff`} component={Make} />
+            <Route path={`${base}projects/:title`} component={ProjectSingle} />
+            <Route path={`${base}help`} component={Help} />
+            <Route path={`${base}faq`} component={Faq} />
+            <Route path={`${base}our-mission`} component={Mission} />
+            <Route path={`${base}linkitz-team`} component={Team} />
+            <Route path={`${base}supporters`} component={Supporters} />
+            <Route path={`${base}contact`} component={Contact} />
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
 		)
 	}
 }
 
+const Root = () => {
+  return (
+    <Router history={hashHistory}>
+      <Main>
+        <IndexRoute component={Home} />
+        <Route exact path={base} component={Home} />
+        <Route exact path={`${base}home`} component={Home} />
+        <Route path={`${base}learn`} component={Learn} />
+        <Route path={`${base}learn-to-code`} component={Code} />
+        <Route path={`${base}tutorial/:title`} component={TutorialSingle} />
+        <Route path={`${base}make-it-work`} component={Work} />
+        <Route path={`${base}make-cool-stuff`} component={Make} />
+        <Route path={`${base}projects/:title`} component={ProjectSingle} />
+        <Route path={`${base}help`} component={Help} />
+        <Route path={`${base}faq`} component={Faq} />
+        <Route path={`${base}our-mission`} component={Mission} />
+        <Route path={`${base}linkitz-team`} component={Team} />
+        <Route path={`${base}supporters`} component={Supporters} />
+        <Route path={`${base}contact`} component={Contact} />
+       </Main> 
+    </Router>
+  )
+}
+
 const app = document.getElementById('app');
-ReactDOM.render(<Main />, app);
+ReactDOM.render(<Main/>, app);

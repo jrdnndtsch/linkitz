@@ -1,10 +1,17 @@
 .contact 
 	:background url('/images/general/Linkitz-bg-white.gif')
-	:padding 1px 0
+	:padding-bottom 1px
+	.page-title
+		h1, h2
+			:color $black
 	.wrapper--flex
 		:margin-bottom 60px
+	.button 
+		:margin-top 18px	
 	form, .image
 		:width 50%
+		+display-for(sm xs)
+			:width 100%
 	form
 	 :background white
 	 :padding 40px
@@ -13,7 +20,7 @@
 	 	:font-style italic
 	 	:margin-bottom 34px
 	 	:display block
-	 input, textarea 
+	 input:not([type="submit"]), textarea  
 	 	:display block
 	 	:width 100%
 	 	:background $grey-light

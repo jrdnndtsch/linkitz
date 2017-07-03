@@ -35,6 +35,7 @@ class Team extends React.Component {
 					})}
 				</section>
 				<section className="team--members wrapper">
+					<h2 className="sub-title">Meet the team</h2>
 					{this.state.members.map((m, i) => {
 						return(
 							<div key={i} className="wrapper--flex">

@@ -8,6 +8,8 @@ import db from '../db.json';
 
 import { makeParam } from './../lib/helpers.js';
 
+let base = "/"
+
 class Make extends React.Component {
 	constructor() {
 		super();
@@ -60,7 +62,7 @@ class Make extends React.Component {
 				<div className="wrapper wrapper--flex">
 					{this.state.projects.map((p, i) => {
 						return(
-							<Link to={`projects/${makeParam(p.title)}`} key={i} className="grid--quarter">
+							<Link to={`${base}projects/${makeParam(p.title)}`} key={i} className="grid--quarter">
 								<TutorialBlock data={p} url="projects" ext="svg"/>
 							</Link>	
 						)
