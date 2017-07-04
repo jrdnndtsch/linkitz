@@ -73,29 +73,6 @@ class Main extends React.Component {
 	}
 }
 
-const Root = () => {
-  return (
-    <Router history={hashHistory}>
-      <Main>
-        <IndexRoute component={Home} />
-        <Route exact path={base} component={Home} />
-        <Route exact path={`${base}home`} component={Home} />
-        <Route path={`${base}learn`} component={Learn} />
-        <Route path={`${base}learn-to-code`} component={Code} />
-        <Route path={`${base}tutorial/:title`} component={TutorialSingle} />
-        <Route path={`${base}make-it-work`} component={Work} />
-        <Route path={`${base}make-cool-stuff`} component={Make} />
-        <Route path={`${base}projects/:title`} component={ProjectSingle} />
-        <Route path={`${base}help`} component={Help} />
-        <Route path={`${base}faq`} component={Faq} />
-        <Route path={`${base}our-mission`} component={Mission} />
-        <Route path={`${base}linkitz-team`} component={Team} />
-        <Route path={`${base}supporters`} component={Supporters} />
-        <Route path={`${base}contact`} component={Contact} />
-       </Main> 
-    </Router>
-  )
-}
 
 const app = document.getElementById('app');
 ReactDOM.render(<Main/>, app);

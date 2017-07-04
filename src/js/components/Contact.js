@@ -5,24 +5,25 @@ import API from 'fetch-api';
 import VideoBlock from './VideoBlock.js';
 import BreadCrumbs from './BreadCrumbs.js';
 
+
 class Contact extends Component {
 	componentDidMount() {
-		this.sendFormData()
+		// this.sendFormData()
 	}
-	sendFormData() {
-		var request;
+	sendFormData(e) {
+		e.preventDefault()
+		let $form = $(e.target)[0]
+		let serializedData = $(e.target).serialize()
+		let request;
 		request = $.ajax({
-		  url: 'https://script.google.com/macros/s/AKfycbyL26HYDItBAAEVtEYY9FGtQ1ehwKxdlViWC6p5ls8OFGAzDZCR/exec', 
+		  url: 'https://script.google.com/macros/s/AKfycbz8w9JG4wDNVBSemfoT_d7Gzd66PC2LrLwRw_o1frDhhlW3YzVG/exec', 
 		  type: 'post', 
-		  data: {
-		  	name: 'Jordan'
-		  }
+		  data: serializedData
 		});
 
 		 // Callback handler that will be called on success
 		request.done(function (response, textStatus, jqXHR){
-		    console.log(response)
-
+		    $form.reset()
 		});
 
 		// Callback handler that will be called on failure
@@ -33,17 +34,9 @@ class Contact extends Component {
 		        textStatus, errorThrown
 		    );
 		});
-		request.always(function () {
-		        // Reenable the inputs
-		        // $inputs.prop("disabled", false);
-		    });
-		// e.preventDefault()
-		// let api = new API({
-		//   baseURI: 'https://script.google.com/macros/s/AKfycbyL26HYDItBAAEVtEYY9FGtQ1ehwKxdlViWC6p5ls8OFGAzDZCR/exec'
-		// });
-		// var data = JSON.stringify({data: 'hi'})
-		// api.get({data: 'hi'})
+
 	}
+
 	render() {
 		return(
 			<div className="contact">
@@ -53,14 +46,14 @@ class Contact extends Component {
 					<h2 className="sub-title">We'd Love To Hear From You!</h2>
 				</div>
 				<div className="wrapper wrapper--flex"> 
-					<form action="https://script.google.com/macros/s/AKfycbyL26HYDItBAAEVtEYY9FGtQ1ehwKxdlViWC6p5ls8OFGAzDZCR/exec" method="post">
+					<form onSubmit={this.sendFormData}>
 						<span>* Required fields</span>
-						<input type="text" name="first_name" placeholder="*First Name" required/>
-						<input type="text" name="last_name" placeholder="*Last Name" required/>
-						<input type="email" name="email" placeholder="*Email Address" required/>
-						<input type="email" name="email_subject" placeholder="Email Subject" required/>
-						<textarea name="message" placeholder="*Message" required></textarea>
-						<input type="submit" value="Send" className="button"/>
+						<input type="text" name="first_name" placeholder="*First Name" required />
+						<input type="text" name="last_name" placeholder="*Last Name" required />
+						<input type="email" name="email" placeholder="*Email Address" required />
+						<input type="text" name="email_subject" placeholder="Email Subject" />
+						<textarea name="message" placeholder="*Message" required ></textarea>
+						<input type="submit" defaultValue="Send" className="button"/>
 					</form>
 					<div className="image">
 						<img src="/images/general/Linkitz-product-3.png"/>
