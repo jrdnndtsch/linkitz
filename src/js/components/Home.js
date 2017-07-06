@@ -66,11 +66,11 @@ class Home extends React.Component {
 						<h1><span>{this.state.header_content[this.state.featured_content].text}</span><img src="/images/general/logo-light.svg"/></h1>
 						<h2>Linkitz is a wearable electronic kit for kids</h2>
 						<a href="#"><span>Get Started</span><img src="/images/general/down-arrow.png"/></a>
-						<div className="home--order">
+						<a href="https://linkitz.backerkit.com/hosted_preorders" className="home--order">
 							<p>Order Linkitz</p>
 							<span className="order--arrow"><img src="/images/general/order-arrow.png"/></span>
 							<img className="order--product" src="/images/general/linkitz-product-1.png"/>
-						</div>
+						</a>
 					</div>
 				</header>
 				<main className="home--content">
