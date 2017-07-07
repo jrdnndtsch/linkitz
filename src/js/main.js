@@ -21,6 +21,7 @@ import TutorialSingle from './components/TutorialSingle.js';
 import ProjectSingle from './components/ProjectSingle.js';
 import Make from './components/Make.js';
 import Contact from './components/Contact.js';
+import Privacy from './components/Privacy.js';
 
 let base = "/"
 
@@ -66,6 +67,7 @@ class Main extends React.Component {
             <Route path={`${base}linkitz-team`} component={Team} />
             <Route path={`${base}supporters`} component={Supporters} />
             <Route path={`${base}contact`} component={Contact} />
+            <Route path={`${base}privacy-policy`} component={Privacy} />
           <Footer />
         </div>
       </HashRouter>

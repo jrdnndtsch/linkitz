@@ -21,7 +21,7 @@ class Footer extends React.Component {
 								<li><Link to="/contact">Contact Us</Link></li>
 							</ul>
 							<ul>
-								<li><Link to="">Privacy</Link></li>
+								<li><Link to="/privacy-policy">Privacy</Link></li>
 								<li><a href="https://www.facebook.com/Linkitz" target="_blank">Facebook</a></li>
 							</ul>
 						</div>
