@@ -34,14 +34,14 @@ class Code extends React.Component {
 					<div className="block">
 						<span>1</span>
 						<h2>Download</h2>
-						<p>Download app from the Chrome store</p>
+						<p>Download app from the Chrome store.</p>
 						<a href="https://chrome.google.com/webstore/detail/chhfgofbepmalddgpgmkaleflehbfamh" className="button button--download">Download App <span className="arrow"></span></a>
 					</div>
 					<div className="block">
 						<div>
 							<span>2</span>
 							<h2>Install</h2>
-							<p>From the Chrome app menu in the upper left corner of the chrome browser</p>
+							<p>From the Chrome app menu in the upper left corner of the chrome browser.</p>
 							<img src="/images/general/code-install-1.jpg"/>
 						</div>
 						<div className="block--instruction_second">

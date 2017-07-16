@@ -13,7 +13,8 @@ class TutorialSingle extends React.Component {
 		this.state = {
 			lesson: {}, 
 			modules: [], 
-			title: ''
+			title: '', 
+			videoOpen: false
 		}
 	}
 
@@ -32,6 +33,13 @@ class TutorialSingle extends React.Component {
 		return this.state.lesson.title
 	}
 
+	openVideo() {
+		this.setState({
+			videoOpen: true
+		})
+		this.refs.video.play()
+	}
+
 	componentDidMount() {
 		this.getTutContent(this.props.match.params.title)
 	}
@@ -43,8 +51,8 @@ class TutorialSingle extends React.Component {
 				{this.state.modules.map((mod, i) => {
 						return (
 							<div key={i} className="wrapper wrapper--flex tutorial--video">
-								<div className="tutorial--video_container">
-									<video src={`/videos/tutorials/${mod.video}`} controls ></video>
+								<div className={`tutorial--video_container ${!this.state.videoOpen ? 'closed' : 'open'}`} onClick={this.openVideo.bind(this)}>
+									<video src={`/videos/tutorials/${mod.video}`} ref="video" controls ></video>
 								</div>
 								
 								<aside>

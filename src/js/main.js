@@ -44,22 +44,23 @@ class Main extends React.Component {
 
   closeMenu() {
     this.setState({
-      menu_active: false
+      menu_active: false 
     })
   }
 
+ 
 	render() {
 		return(
-			<HashRouter>
+			<HashRouter onChange={()=> console.log('change')}>
         <div>
           <Nav menu_active={this.state.menu_active} open_menu={this.openMenu.bind(this)} close_menu={this.closeMenu.bind(this)}/>
             <Route exact path={base} component={Home} />
             <Route exact path={`${base}home`} component={Home} />
             <Route path={`${base}learn`} component={Learn} />
-            <Route path={`${base}learn-to-code`} component={Code} />
+            <Route path={`${base}learn-to-code`} component={Code}/>
             <Route path={`${base}tutorial/:title`} component={TutorialSingle} />
             <Route path={`${base}make-it-work`} component={Work} />
-            <Route path={`${base}make-cool-stuff`} component={Make} />
+            <Route path={`${base}make-cool-stuff`} component={Make} onUpdate={this.handlePageChange}/>
             <Route path={`${base}projects/:title`} component={ProjectSingle} />
             <Route path={`${base}help`} component={Help} />
             <Route path={`${base}faq`} component={Faq} />

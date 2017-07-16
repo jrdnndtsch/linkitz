@@ -3,6 +3,10 @@ import MainSection from './MainSection.js';
 
 import db from '../db.json'
 
+let Scroll = require('react-scroll');
+let Link = Scroll.Link;
+let Element = Scroll.Element;
+
 let base = "/linkitz-dev/"
 
 class Home extends React.Component {
@@ -65,7 +69,7 @@ class Home extends React.Component {
 						<img className="featured" id="featured" src={`/images/general/${this.state.header_content[this.state.featured_content].image}.png`}/>
 						<h1><span>{this.state.header_content[this.state.featured_content].text}</span><img src="/images/general/logo-light.svg"/></h1>
 						<h2>Linkitz is a wearable electronic kit for kids</h2>
-						<a href="#"><span>Get Started</span><img src="/images/general/down-arrow.png"/></a>
+						<Link to="home-links" smooth={true}><span>Get Started</span><img src="/images/general/down-arrow.png"/></Link>
 						<a href="https://linkitz.backerkit.com/hosted_preorders" className="home--order">
 							<p>Order Linkitz</p>
 							<span className="order--arrow"><img src="/images/general/order-arrow.png"/></span>
@@ -73,14 +77,14 @@ class Home extends React.Component {
 						</a>
 					</div>
 				</header>
-				<main className="home--content">
+				<Element className="home--content" name="home-links">
 					<section className="home--actions home--wrapper">
 						{this.state.sections.map((section, i) => {
 							return <MainSection data={section} key={i}/> 
 						})}
 						<img src="/images/general/linkitz-product-1.png"/>
 					</section>
-				</main>
+				</Element>
 			</div>
 		)
 	}
