@@ -193,7 +193,7 @@
 	"projects" : [
 		{
 			"title":"BoopIt",
-			"sub_title":"To play BoopIt , Linkitz  gives an instruction through the speaker and you have to follow the instruction. If you succeed, you get the next instruction. It gives the instructions faster and faster as you play. BoopIt is an advanced level and uses more components and there are more parts to the code.",
+			"sub_title":"To play BoopIt , Linkitz  gives an instruction through the speaker and you have to follow the instruction. If you succeed, you get the next instruction. It gives the instructions faster and faster as you play. BoopIt is an advanced level game. It uses more components and there are more parts to the code.",
 			"parts" : ["hub", "USB", "LED", "motion"],
 			"extra_parts" : ["speaker", "microphone"],
 			"level": "Advanced",
@@ -229,7 +229,7 @@
 					"text": "Make a program that flashes when it senses motion.  You only need two blocks for the simplest version!"
 				}, 
 				{
-					"text" : "Click here to see a hint (Put the Flash block inside the Motion Trigger block)"
+					"text" : "Need a hint?  Put the Flash block inside the Motion Trigger block"
 				}
 			],
 			"explore" : [
@@ -303,7 +303,7 @@
 		}, 
 		{
 			"title":"Nightlight",
-			"sub_title":"If you charge your linkitz for a while before you go to bed, the batteries will last long enough to keep you company all night. Watch your favorite colors glow and change as you fall asleep.",
+			"sub_title":"If you charge your Linkitz for a while before you go to bed, the batteries will last long enough to keep you company all night. Watch your favorite colors glow and change as you fall asleep.",
 			"parts" : ["Hub", "LED", "USB"],
 			"extra_parts" : ["A sheet of letter-size lightweight white printer paper or parchment paper", "Tape", "Scissors", "Pencil", "Ruler"],
 			"level": "Easy",
@@ -335,11 +335,10 @@
 					"text" : "How would you change Nightlight-Easy to glow in more than two colors?"
 				}, 
 				{
-					"text": "Check out how the Fade block works. How would you make each color glow for longer than 10 seconds?", 
-					"note" : "If you use too many colors, or set the glow timer for too long, your batteries might not last for the whole night."
+					"text": "Check out how the Fade block works. How would you make each color glow for longer than 10 seconds? <span class='note'><strong>note:</strong> If you use too many colors, or set the glow timer for too long, your batteries might not last for the whole night.</span>"
 				}, 
 				{
-					"text" : "Keep the larger piece to make a paper airplane http://www.origami-instructions.com/paper-airplanes.html"
+					"text" : "Keep the larger piece to make a paper airplane <a href='http://www.origami-instructions.com/paper-airplanes.html' target='_blank'>http://www.origami-instructions.com/paper-airplanes.html</a>"
 				}
 			]
 		}, 
@@ -371,8 +370,7 @@
 			],
 			"explore" : [
 				{
-					"text" : "Does anyone you know wear a FitBit™ on their wrist? Many grown ups use these to make sure they walk 10,000 steps a day.  The biggest number Linkitz can count to is 127.  Can you think if a way to get Linkitz to count to higher numbers?",
-					"hint" : "Use another counter. What is 127 x 127?"
+					"text" : "Does anyone you know wear a FitBit™ on their wrist? Many grown ups use these to make sure they walk 10,000 steps a day.  The biggest number Linkitz can count to is 127.  Can you think if a way to get Linkitz to count to higher numbers? <span class='hint'><strong>hint:</strong> Use another counter. What is 127 x 127?</span>"
 				}
 			]
 		}, 
@@ -394,7 +392,7 @@
 				}, 
 				{
 					"text" : "To play:", 
-					"sub_text" : ["To play, one person is chosen to be the traffic cop.", "All the players stand on the starting line and the traffic cop stands with her back to the rest of the players.", "When the Linkitz flashes green the traffic cop shouts “Green light”. The other players try to run to the finish line.", "When the Linkitz flashes red, the traffic cop shouts \"red light,\" and turns around. The other players have to freeze.", "If the traffic cop catches a player moving, she sends them back to the starting line.", "The first person to cross the finish line wins, and becomes the new traffic cop."]
+					"sub_text" : ["To play, one person is chosen to be the traffic cop.", "All the players stand on the starting line and the traffic cop stands with her back to the rest of the players.", "When the Linkitz flashes green the traffic cop shouts \"green light\". The other players try to run to the finish line.", "When the Linkitz flashes red, the traffic cop shouts \"red light,\" and turns around. The other players have to freeze.", "If the traffic cop catches a player moving, she sends them back to the starting line.", "The first person to cross the finish line wins, and becomes the new traffic cop."]
 				}
 			],
 			"explore" : [
@@ -414,10 +412,7 @@
 					"text" : "Download the Rock Paper Scissors code from the Saved Programs menu."
 				}, 
 				{
-					"text" : "To play:"
-				}, 
-				{
-					"text" : "Linkitz will flash green three times (counting to three) and then show a pattern of lights.", 
+					"text" : "To play, Linkitz will flash green three times (counting to three) and then show a pattern of lights.", 
 					"sub_text" : ["Rock is the smallest hand sign, so if Linkitz chooses rock, it will only light the hub (red lights for rock). If you threw paper, you win because paper covers rock. But if you threw scissors, Linkitz wins, because rock breaks scissors.", "Paper is the biggest hand sign so if Linkitz chooses paper, it lights the hub and all three petals (purple lights for paper). If you threw scissors, you win, because scissors cut paper. But if you threw rock, you lose, because paper covers rock.", "Scissors hand sign looks like a V, so if Linkitz chooses scissors, it will light up two petals and the hub, making a V shape from lights (sapphire blue for scissors). If you threw rock, you win, because rock breaks scissors. But if you threw paper, you lose, because scissors cut paper.", "Did you win? Try again! Linkitz will play 10 times."]
 				}
 			]
@@ -477,8 +472,7 @@
 			], 
 			"explore" : [
 				{
-					"text": "How would you make Linkitz flash first red, then blue?", 
-					"hint" : "Check out <a>tutorial 4</a> if  you forgot how to do this."
+					"text": "How would you make Linkitz flash first red, then blue? <span class='hint'><strong>Hint:</strong> Check out <a>tutorial 4</a> if  you forgot how to do this.</span>"
 				}
 			]
 		}
@@ -495,7 +489,7 @@
 			"solution" : [
 				"Make sure that the cable is securely connected to both the USB petal and your computer/laptop, and try uploading again.", 
 				"Some USB cables are for charging only, and are not USB data cables. If you substituted another cable, this might be causing the problem. A charge-only cable cannot transmit your program to the Linkitz. The cable that came with your Linkitz carries both charge and data.", 
-				"Your code might have an error that prevents the code from executing. An example if this would be a loop that says DzWhile x is true, do ...dz but x is set to 0."
+				"Your code might have an error that prevents the code from executing. An example of this would be a loop that says While x is true, do, but x is set to 0."
 			]
 		}, 
 		{
@@ -509,20 +503,20 @@
 			"question" : "LED petal isn't lighting up.", 
 			"solution" : [
 				"I’ve programmed my Linkitz to light up but the LED petal is not lighting up.", 
-				"All the Linkitz components include LEDs. Depending on how your code is written, different LEDs might light up, that are not on the LED petal. Check out this tutorial [link] for an explanation of how to control the LEDs."
+				"All the Linkitz components include LEDs. Depending on how your code is written, different LEDs might light up, that are not on the LED petal. Check out <a href='#/tutorial/color-controls'>this tutorial</a> for an explanation of how to control the LEDs."
 			]
 		}, 
 		{
 			"question" : "My motion sensor is not responding to motion.",
 			"solution" : [
 				"Make sure your program includes a block that gets data from the motion sensor (onMotion or getMotionData).", 
-				"Sometimes, immediately after being programmed, the Linkitz hub loses track of which petals are connected. Try unplugging all the petals and plugging them in again"
+				"Sometimes, immediately after being programmed, the Linkitz hub loses track of which petals are connected. Try unplugging all the petals and plugging them in again."
 			]
 		}, 
 		{
 			"question" : "Help! My Linkitz got wet!", 
 			"solution" : [
-				"Linkitz contain sensitive electronics. If they were completely immersed, we can’t guarantee what will happen, even after they completely dry out."
+				"Linkitz contains sensitive electronics. If they were completely immersed, we can’t guarantee what will happen, even after they completely dry out."
 			]
 		}
 	], 
@@ -564,7 +558,7 @@
 					{
 						"question" : "How do I charge my Linkitz?", 
 						"answer" : [
-							"Charge your Linkitz using the cable that came in the the box, or any USB-to-microUSB cable. Plug the USB petal (orange) into the hub (yellow). Plug the small end of the USB cable into the USB petal. Plug the large end into a computer or laptop. Your hub will begin to flash orange, to let you know that it is properly connected. It’s OK to have other petals plugged in when charging. They may light up during charging, too."
+							"Charge your Linkitz using the cable that came in the the box, or any USB-to-microUSB cable. Plug the USB petal (orange) into the hub (yellow). Plug the small end of the USB cable into the USB petal. Plug the large end into a computer or laptop. Your hub will begin to flash to let you know that it is properly connected. It’s OK to have other petals plugged in when charging. They may light up during charging, too."
 						]
 					}, 
 					{
@@ -586,9 +580,9 @@
 						]
 					}, 
 					{
-						"question" : "Can I attach multiple petal with the same function (for example, 3 speakers)?", 
+						"question" : "Can I attach multiple petals with the same function (for example, 3 speakers)?", 
 						"answer" : [
-							"Yes. You can attach any number of output petals. For input petal, the hub will only read data from one even if you have two or three attached."
+							"Yes. You can attach any number of output petals. For input petals, the hub will only read data from one even if you have two or three attached."
 						]
 					}, 
 					{
@@ -606,7 +600,7 @@
 					{
 						"question" : "Does it hurt the Linkitz to get too hot or too cold?", 
 						"answer" : [
-							"Linkitz are happiest at the same temperature that you are comfortable in. If Linkitz get too hot or too cold, the batteries might stop operating properly"
+							"Linkitz are happiest at the same temperature that you are comfortable in. If Linkitz get too hot or too cold, the batteries might stop operating properly."
 						]
 					}
 				]
@@ -632,7 +626,7 @@
 					{
 						"question" : "I have an idea for a program. Can I send it to you?", 
 						"answer" : [
-							"We’d love to hear from you. You can reach us using this contact form [link to contact form]. If you are under 13 years of age, please ask your parents to contact us, instead. And be sure to let us know if we can share your idea with our other Linkitz friends on our website!"
+							"We’d love to hear from you. You can reach us using <a href='#/contact'>this contact form</a>. If you are under 13 years of age, please ask your parents to contact us, instead. And be sure to let us know if we can share your idea with our other Linkitz friends on our website!"
 						]
 					}
 				]
@@ -655,7 +649,7 @@
 					{
 						"question" : "Can I order replacement parts?", 
 						"answer" : [
-							"Yes, please contact us for availability [link to contact form]."
+							"Yes, please contact us for availability <a href='#/contact'>here</a>."
 						]
 					}
 				]
@@ -688,32 +682,38 @@
 			{
 				"title" : "Most girls become interested in STEM at the age of 11-and-a-half but this starts to wane by the age of 15.",
 				"sub_title" : "Just 42% said they would consider a STEM-related career in the future",
-				"source" : "Microsoft"
+				"source" : "Microsoft", 
+				"link" : "https://blogs.microsoft.com/firehose/2017/03/01/microsoft-study-in-europe-reveals-when-and-why-girls-interest-in-stem-fields-begins-to-wane/#ZliwwvolJyPSLZ3T.99"
 			}, 
 			{
 				"title" : "Girls start believing they aren't goof at math, science and even computers at a young age - but providing fun STEM activities at school and home may spark interest and inspire confidence.",
 				"sub_title" : "A new I-LABS find that, when exposed to a computer-programming activity, 6-year-old girls expressed greater interest in technology and more positive attitudes about their own skills and abilities than girls who didn't try the activity.", 
-				"source" : "journal of Experimental Child Psychology"
+				"source" : "Journal of Experimental Child Psychology", 
+				"link" : "http://ilabs.washington.edu/sites/default/files/17Master_Cheryan_Moscatelli_Meltzoff_STEM_programming_1st%20grade.pdf"
 			}, 
 			{
 				"title" : "A 2015 study found that boys are more likely to play with toys that develop spatial intelligence-K'nex, puzzles, Lego bricks-than girls are", 
-				"sub_title" : "Marketing can certainly play a role. The girl-oriented product line Lego Friends focuses on playcating rather than construction... Spatial skills are \"not only important for math and science but for what we call 'excutive function'–higher-level thinking. Being comfortable with certain types of toys may also shape kids' confidence in specific subject.\"", 
-				"source" : "National Geographic"
+				"sub_title" : "Marketing can certainly play a role. The girl-oriented product line Lego Friends focuses on playcating rather than construction... Spatial skills are \"not only important for math and science but for what we call 'executive function'–higher-level thinking. Being comfortable with certain types of toys may also shape kids' confidence in specific subject.\"", 
+				"source" : "National Geographic", 
+				"link" : "http://www.nationalgeographic.com/magazine/2017/01/gender-toys-departments-piece/"
 			}, 
 			{
 				"title" : "In elementary school about as many girls as boys have positive attitudes toward science. A recent study of fourth graders showed that 66 percent of girls and 68 percent of boys reported liking science.",
 				"sub_title" : "",
-				"source" : "National Science Foundation"
+				"source" : "National Science Foundation", 
+				"link" : "https://www.nsf.gov/news/news_summ.jsp?cntn_id=109939"
 			}, 
 			{
 				"title" : "Research shows that 66 percent of girls between ages 6 and 12 say they're interested in computer science.",
 				"sub_title" : "But around adolescence, interest drops off in a major way–only 32 percent of 13-to-17-year-old girls are interested in computer programs, and only 4 percent of college freshmen are. That's a problem, because by 2020, there will be more than 1.2 million available jobs in tech–and at this rate, women in the U.S. are on track to fill on track to fill 3 percent of them.",
-				"source" : "Glamour"
+				"source" : "Glamour", 
+				"link" : "https://www.glamour.com/story/first-look-at-the-girls-who-code-books"
 			}, 
 			{
 				"title" : "Young women are not getting enough practical, hands-on experience with STEM subjects.", 
-				"sub_title" : "60% admitted they would feel more confidetn pursuing a career in STEM fields if they knew mena dn women were equally employed in those professions.", 
-				"source" : "Miscrosoft"
+				"sub_title" : "60% admitted they would feel more confident pursuing a career in STEM fields if they knew men and women were equally employed in those professions.", 
+				"source" : "Miscrosoft", 
+				"link" : "https://blogs.microsoft.com/firehose/2017/03/01/microsoft-study-in-europe-reveals-when-and-why-girls-interest-in-stem-fields-begins-to-wane/#ZliwwvolJyPSLZ3T.99"
 
 			}
 		]
@@ -722,8 +722,8 @@
 		"members" : [
 			{
 				"name" : "Lyssa Neel", 
-				"title" : "Founde / CEO", 
-				"bio" : "A computer scientist by training, Lyssa is apassionate about sharing her love for programming. Before co-founding Linkitz, she served as CEO and CTO for several IT start-ups in the United States and Canada. She also co-founded the University of Toronto Early Stage Technology program. Lyssa is a graduate of MIT, where she received SB, SM, and PhD degress from the Department of Electrical Engineering adn Computer Science."
+				"title" : "Founder / CEO", 
+				"bio" : "A computer scientist by training, Lyssa is a passionate about sharing her love for programming. Before co-founding Linkitz, she served as CEO and CTO for several IT start-ups in the United States and Canada. She also co-founded the University of Toronto Early Stage Technology program. Lyssa is a graduate of MIT, where she received SB, SM, and PhD degress from the Department of Electrical Engineering and Computer Science."
 			}, 
 			{
 				"name" : "Drew Macrae", 
@@ -732,7 +732,7 @@
 			}, 
 			{
 				"name" : "Chris Wallace", 
-				"title" : "CEdO", 
+				"title" : "Founder", 
 				"bio" : "Chris holds a Doctorate in Classics from the University of Toronto. His research has been published around the globe and translated into four languages. He has been teaching for more than a decade and loves helping kids realize how much they already know. Chris makes sure that Linkitz will delight kids, satisfy parents and support teachers."
 			}, 
 			{

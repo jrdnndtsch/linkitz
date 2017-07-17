@@ -54,7 +54,7 @@ class Help extends React.Component {
 					<main className="block">
 						<h2>{this.state.active_question}</h2>
 						{this.state.solution.map((p, i) => {
-							return <p key={i}>{p}</p>
+							return <p key={i} dangerouslySetInnerHTML={{__html: p}}></p>
 						})}
 					</main>
 				</div>

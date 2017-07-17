@@ -33,7 +33,7 @@ class Mission extends React.Component {
 					</div>
 					<div>
 						<p>Linkitz mission is to inspire the next generation of tech titans.</p>
-						<p>We aim to disrupt both the gender inequity of eletronic toy offerings and the almost exclusively male leadership of toy tech industries.</p>
+						<p>The Linkitz philosophy is: Encourage children when they are young, let them explore, and you’re likely to inspire a lifelong interest in STEM.</p>
 					</div>
 				</section>
 				<section className="mission--stats wrapper wrapper--flex">
@@ -42,7 +42,7 @@ class Mission extends React.Component {
 							<div key={i}>
 								<h3>{stat.title}</h3>
 								{stat.sub_title.length > 1 ? <p>{stat.sub_title}</p> : null}
-								<span>Source: {stat.source}</span>
+								<span>Source: <a href={stat.link} target="_blank">{stat.source}</a></span>
 							</div>
 						)
 					})}

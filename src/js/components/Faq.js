@@ -38,7 +38,7 @@ class Faq extends React.Component {
 									return(
 										<div key={i}>
 											<p className="question">{q.question}</p>
-											{q.answer.map((a, i) => {return <p key={i}>{a}</p>})}
+											{q.answer.map((a, i) => {return <p key={i} dangerouslySetInnerHTML={{__html: a}}></p>})}
 										</div>
 									)
 								})}

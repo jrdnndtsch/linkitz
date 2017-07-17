@@ -46,6 +46,12 @@ class ProjectSingle extends React.Component {
 		return this.state.lesson.title
 	}
 
+	// parseLink(text) {
+	// 	let split_text = text.split('[[')
+	// 	let url = split_text[1].split(']]')
+	// 	return url
+	// }
+
 	createSubText(instruction) {
 		if (instruction.sub_text && instruction.sub_text.length >= 1) {
 			return (
@@ -84,11 +90,13 @@ class ProjectSingle extends React.Component {
 					<h3>{title}</h3>
 					<ol>
 						{a.map((p, i)=>{
+							// <li key={i} dangerouslySetInnerHTML={{__html: p.text}}></li>
+									// {p.text}
+									// {p.note ? <span className="note"><strong>note:</strong>{p.note}</span> : null}
+									// {p.hint ? <span className="hint"><strong>hint:</strong>{p.hint}</span> : null}
 							return (
-								<li key={i}>
-									{p.text}
-									{p.note ? <span className="note"><strong>note:</strong>{p.note}</span> : null}
-									{p.hint ? <span className="hint"><strong>hint:</strong>{p.hint}</span> : null}</li>
+								<li key={i} dangerouslySetInnerHTML={{__html: p.text}}>
+								</li>
 							)
 						})}
 					</ol>
@@ -136,12 +144,13 @@ class ProjectSingle extends React.Component {
 						</div>
 					</section>
 					<section className="project--instructions">
-						<h3>Instruction</h3>
+						<h3>Instructions</h3>
 						<ol>
 							{this.state.instructions.map((inst, i) => {
 								return (
 									<li key={i}>
 										{inst.text}
+										{inst.hint ? <span className="hint"><strong>hint:</strong>{inst.hint}</span> : null}
 										{this.createSubText(inst)}
 									</li>
 								)

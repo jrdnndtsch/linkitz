@@ -45,7 +45,7 @@ class Supporters extends React.Component {
 					</div>
 					<div>
 						<h2>You Made It Happen</h2>
-						<p>With the help of our 680 backers, Linkitz raised over $100,000 on Kickstarter between May and Jun 2015.</p>
+						<p>With the help of our 680 backers, Linkitz raised over $100,000 on Kickstarter between May and June 2015.</p>
 						<p>Thank you to all the supporters who helped make Linkitz happen!</p>
 					</div>
 				</section>
