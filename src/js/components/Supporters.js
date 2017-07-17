@@ -20,6 +20,7 @@ class Supporters extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0)
 		let stem = db.supporters.stemspiration.map((p) => {
 		 return {full_name: this.buildName(p), image: buildImg(p)}
 		})

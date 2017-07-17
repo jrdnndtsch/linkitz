@@ -11,6 +11,7 @@ class Mission extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0);
 		this.setState({
 			stats : db.mission.stats
 		})

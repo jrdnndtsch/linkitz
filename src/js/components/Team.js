@@ -16,6 +16,7 @@ class Team extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0)
 		this.setState({
 			members: db.team.members, 
 			philosophy: db.team.philosophy

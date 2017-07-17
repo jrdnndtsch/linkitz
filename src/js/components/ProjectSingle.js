@@ -46,11 +46,7 @@ class ProjectSingle extends React.Component {
 		return this.state.lesson.title
 	}
 
-	// parseLink(text) {
-	// 	let split_text = text.split('[[')
-	// 	let url = split_text[1].split(']]')
-	// 	return url
-	// }
+
 
 	createSubText(instruction) {
 		if (instruction.sub_text && instruction.sub_text.length >= 1) {
@@ -106,6 +102,7 @@ class ProjectSingle extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0)
 		this.getProjContent(this.props.match.params.title)
 	}
 

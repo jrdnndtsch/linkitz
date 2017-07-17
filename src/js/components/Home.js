@@ -34,6 +34,7 @@ class Home extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0)
 		let sections = db.main_sections.filter((section) => {
 			return section.show_index
 		})

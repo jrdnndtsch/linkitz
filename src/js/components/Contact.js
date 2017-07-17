@@ -8,7 +8,7 @@ import BreadCrumbs from './BreadCrumbs.js';
 
 class Contact extends Component {
 	componentDidMount() {
-		// this.sendFormData()
+		window.scrollTo(0, 0)
 	}
 	sendFormData(e) {
 		e.preventDefault()

@@ -18,6 +18,7 @@ class Code extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0)
 		this.setState({
 			tutorials : db.tutorials
 		})

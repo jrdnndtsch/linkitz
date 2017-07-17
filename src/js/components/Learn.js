@@ -11,6 +11,10 @@ class Learn extends React.Component {
 			sections: db.main_sections
 		}
 	}
+
+	componentDidMount() {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		return(
 			<div className="learn">

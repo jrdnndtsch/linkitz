@@ -15,6 +15,7 @@ class Help extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0)
 		this.setState({
 			questions: db.help, 
 			active_question: db.help[0].question, 

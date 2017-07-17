@@ -2,6 +2,9 @@ import React from 'react';
 import BreadCrumbs from './BreadCrumbs.js';
 
 class Privacy extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
 	render() {
 		return(
 			<div className="privacy">

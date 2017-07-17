@@ -14,6 +14,7 @@ class Work extends React.Component {
 	}
 
 	componentDidMount() {
+		window.scrollTo(0, 0);
 		this.setState({
 			how_tos : db.how_tos.modules
 		})
