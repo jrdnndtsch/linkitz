@@ -24,7 +24,7 @@
 		{
 			"title" : "Help", 
 			"sub_title" : "Troubleshooting & Tips", 
-			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repellendus obcaecati error reiciendis, cum suscipit rem? Placeat consequatur architecto, recusandae!", 
+			"desc" : "Having a problem with your Linkitz? Don't worry, we're here to help. The most common problems and fixes are on this page.", 
 			"index" : 4, 
 			"show_index" : false
 
@@ -32,7 +32,7 @@
 		{
 			"title" : "FAQ", 
 			"sub_title" : "Frequently Asked Questions", 
-			"desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ex sit, neque sint asperiores quaerat impedit dignissimos culpa molestias iure.", 
+			"desc" : "You've got questions, we've got answers! Check out the most frequently asked questions about Linkitz.", 
 			"index" : 5, 
 			"show_index" : false
 		}
