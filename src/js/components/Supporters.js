@@ -8,24 +8,41 @@ class Supporters extends React.Component {
 		super();
 		this.state = {
 			stemspiration: [], 
-			wall: []
+			wall: [], 
+			letters: []
 		}
 	}
-	buildName(name) {
-		let initial = name.split(' ')[1].split('')[0]
-		let first = name.split(' ')[0]
-		let full_name = first + ' ' + initial + '.'
-		return full_name
+	// buildName(name) {
+	// 	let initial = name.split(' ')[1].split('')[0]
+	// 	let first = name.split(' ')[0]
+	// 	let full_name = first + ' ' + initial + '.'
+	// 	return full_name
 
+	// }
+
+	makeWallList(l) {
+		console.log(this, l)
+		return(
+			<div>test</div>
+		)
 	}
 
 	componentDidMount() {
 		window.scrollTo(0, 0)
 		let stem = db.supporters.stemspiration.map((p) => {
-		 return {full_name: this.buildName(p), image: buildImg(p)}
+			let clean_p = p.replace(/[^a-zA-Z ]/g, "")
+		 return {full_name: p, image: buildImg(clean_p)}
+		})
+		let wall = {}
+		db.supporters.wall_of_fame.forEach((p) => {
+			let first = p.substring(0,1).toUpperCase()
+			!wall[first] ? wall[first] = [] : null
+			wall[first].push(p)
 		})
 		this.setState({
-			stemspiration: stem
+			stemspiration: stem, 
+			wall: wall, 
+			letters: Object.keys(wall)
 		})
 	}
 	render() {
@@ -56,8 +73,25 @@ class Supporters extends React.Component {
 						{this.state.stemspiration.map((p, i) => {
 							return (
 								<div key={i}>	
-									<img src={`/images/stemspiration/${p.image}.jpg`} />
+									{p.image ? <img src={`/images/stemspiration/${p.image}.jpg`} /> : null}
 									<p>{p.full_name}</p>
+								</div>
+							)
+						})}
+					</div>
+				</section>
+				<section className="wall wrapper">
+					<h2 className="sub-title">Wall of Fame</h2>
+					<div className="block">
+						{this.state.letters.map((l, i) => {
+							return (
+								<div key={i}>
+									<h3>{l}</h3>
+									<div className="wrapper--flex">
+										{this.state.wall[l].map((p, i) => {
+													return <p key={i}>{p}</p>
+										})}
+									</div>
 								</div>
 							)
 						})}

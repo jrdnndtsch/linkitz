@@ -34,7 +34,6 @@ class Faq extends React.Component {
 						return(
 							<section key={i} className="block">
 								<h2>{paramToString(sec.title)}</h2>
-								{console.log(sec)}
 								{sec.questions.map((q, i) => {
 									return(
 										<div key={i}>
