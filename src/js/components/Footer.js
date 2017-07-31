@@ -28,7 +28,7 @@ class Footer extends React.Component {
 					</section>
 					<section>
 						<p>Copyright © 2017, Linkitz. All rights reserved.</p>
-						<p>Made with ♥ by DesignedUX</p>
+						<p><a href="https://designedux.com/" target="_blank">Made with ♥ by DesignedUX</a></p>
 					</section>
 				</div>
 			</footer>

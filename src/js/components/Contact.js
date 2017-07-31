@@ -23,6 +23,8 @@ class Contact extends Component {
 
 		 // Callback handler that will be called on success
 		request.done(function (response, textStatus, jqXHR){
+				$($form).html('<h2>Thank you for contacting us</h2><p>Your message has been sent!</p>')
+
 		    $form.reset()
 		});
 

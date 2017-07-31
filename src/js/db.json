@@ -576,7 +576,7 @@
 					{
 						"question" : "How do I change a petal?", 
 						"answer" : [
-							"Gently pull the petal straight out of the hub to detach it. Gently push a petal into any slot on the hub to attach it.  You can watch a video that shows you how to assemble and take apart Linkitz. [link to make page]"
+							"Gently pull the petal straight out of the hub to detach it. Gently push a petal into any slot on the hub to attach it.  You can <a href='#/make-it-work'>watch a video</a> that shows you how to assemble and take apart Linkitz."
 						]
 					}, 
 					{

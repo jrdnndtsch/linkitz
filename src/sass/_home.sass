@@ -113,7 +113,7 @@ $circle_sm : 500px
 				:left 50%
 	&--wrapper 
 		// :width 90%
-		:max-width 1400px
+		:max-width 1500px
 		:margin 0 auto	
 		:height 800px	
 		+display-for(sm)
@@ -125,7 +125,6 @@ $circle_sm : 500px
 	&--actions
 		:overflow hidden
 		:position relative
-		:min-height 100vh
 		> div 
 			:width $circle_lg
 			:height $circle_lg
@@ -161,13 +160,13 @@ $circle_sm : 500px
 				:left 0
 				:z-index 2
 				+display-for(lg)
-					:left -120px
+					:left -190px
 				+display-for(md)
 					:left -240px
 					:bottom -160px
 				+display-for(sm)
 					:bottom -70px
-					:left -100px
+					:left -140px
 				@media screen and (max-width: 660px)
 					:bottom 520px
 					:left 0			
@@ -177,14 +176,16 @@ $circle_sm : 500px
 						:left 80px
 					+display-for(sm)
 						:top 160px
-						:left 20px	
+						:left 50px	
+					+display-for(xs)
+						:left -50px	
 					span.arrow, span.arrow:before, span.arrow:after
 						:background $red
 
 			&:nth-of-type(3)
 				:background rgba(51, 204, 102, 0.7)	
 				:bottom -175px
-				:right -75px
+				:right 0
 				+display-for(md)
 					:right -160px
 					:bottom -140px
@@ -193,18 +194,23 @@ $circle_sm : 500px
 				@media screen and (max-width: 660px)
 					:bottom 100px	
 				.main-section
-					:top 200px
+					:top 230px
+					:right -60px
 					@media screen and (min-width: 960px) and (max-width: 1365px)
-						:left 160px
-						:top 220px
+						:left 230px
+						:top 280px
 					+display-for(sm)
-						:top 100px
-						:left 50px	
+						:top 120px
+						:left 70px	
+					+display-for(xs)
+						:top 150px
+						:right -90px	
 					span.arrow, span.arrow:before, span.arrow:after
 						:background $green
 			h2 
 				:font-size 40px
 				:margin 0 0 18px
+				:font-weight normal
 				+display-for(sm xs)
 					:font-size 28px
 			p 
